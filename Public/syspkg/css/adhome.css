@@ -1,0 +1,192 @@
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1538792284038'); /* IE9*/
+  src: url('iconfont.eot?t=1538792284038#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAARsAAsAAAAABqgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAADMAAABCsP6z7U9TLzIAAAE8AAAARAAAAFY8gkgLY21hcAAAAYAAAABLAAABcOcztctnbHlmAAABzAAAALQAAAC0bVCeCWhlYWQAAAKAAAAAMQAAADYS0bzCaGhlYQAAArQAAAAgAAAAJAfUA4NobXR4AAAC1AAAAAgAAAAICAD/9mxvY2EAAALcAAAABgAAAAYAWgAAbWF4cAAAAuQAAAAeAAAAIAEOAEFuYW1lAAADBAAAAUUAAAJtPlT+fXBvc3QAAARMAAAAHwAAADDp73Z7eJxjYGRgYOBikGPQYWB0cfMJYeBgYGGAAJAMY05meiJQDMoDyrGAaQ4gZoOIAgCKIwNPAHicY2BkYWCcwMDKwMHUyXSGgYGhH0IzvmYwYuRgYGBiYGVmwAoC0lxTGByecT/jZm7438AQw9zH0AgUZgTJAQDfgAwIeJxjYGBgZWBgYAZiHSBmYWBgDGFgZAABP6AoI1icmYELLM7CoARWwwISf8b9/z+MBPJZwCQDIxvDKOABkzJQHjisIJiBEQBD0AmVAAAC//b/fwPnA44ADAA0AAAFBiInASY0NjIXARYUJQYmJy4BJyY2Fx4BFxYGBwYUFjI3PgEnLgEnJgAXHgEXFjY3PgEnJgPdChkK/t0KFBkKASMJ/gQwajpZcgsH5qt4qBMLPD8KFBkKSUYPFsGJ0f7uDA+1iStVJhQKDgl2CgoBIwoZEwn+3AoY8goHGiibY6nbDRGjdlygOgoZFApEv22LvBYT/vfOi8gdCQMKBSIPCgAAAHicY2BkYGAAYsfJKj7x/DZfGbhZGEDg+j2bGBj9/9v/ehYG5j4gl4OBCSQKAC8oC6EAAAB4nGNgZGBgbvjfwBDDwvD/GwMDCwMDUAQFMAEAdQoEYAQAAAAEAP/2AAAAAABaAAB4nGNgZGBgYGIwBWIGMIuBgQsIGRj+g/kMAA3bAVAAAHicZY9NTsMwEIVf+gekEqqoYIfkBWIBKP0Rq25YVGr3XXTfpk6bKokjx63UA3AejsAJOALcgDvwSCebNpbH37x5Y08A3OAHHo7fLfeRPVwyO3INF7gXrlN/EG6QX4SbaONVuEX9TdjHM6bCbXRheYPXuGL2hHdhDx18CNdwjU/hOvUv4Qb5W7iJO/wKt9Dx6sI+5l5XuI1HL/bHVi+cXqnlQcWhySKTOb+CmV7vkoWt0uqca1vEJlODoF9JU51pW91T7NdD5yIVWZOqCas6SYzKrdnq0AUb5/JRrxeJHoQm5Vhj/rbGAo5xBYUlDowxQhhkiMro6DtVZvSvsUPCXntWPc3ndFsU1P9zhQEC9M9cU7qy0nk6T4E9XxtSdXQrbsuelDSRXs1JErJCXta2VELqATZlV44RelzRiT8oZ0j/AAlabsgAAAB4nGNgYoAALgbsgImRiZGZga04v7S4NJ+BAQARfALKAA==') format('woff'),
+  url('iconfont.ttf?t=1538792284038') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1538792284038#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sousuo:before { content: "\e60b"; }
+
+.home{
+  width: 1300px;
+  height: 780px;
+  margin: auto 200px;
+  /*background: rgb(181, 236, 236);*/ 
+  position: relative;
+  left:0px;
+}
+.bookmanag{
+ 
+  margin: auto 100px;
+}
+
+.borrowmanag{
+  
+  
+  margin: auto 100px;
+}
+
+.returnmanag{
+ 
+  margin: auto 100px;
+}
+
+.deletemanag{
+ 
+  margin: auto 100px;
+}
+
+
+.content{
+  height: 700px;
+  width: 1100px;
+  background-color: #fff;
+  overflow-y:auto;
+  border: 1px solid black;
+  opacity: 0.8	;
+	filter: alpha(opacity=80);
+}
+
+.biaoti{
+  font-size: 60px;
+  color: #000;
+  height: 100px;
+}
+.daohang{
+  
+  font-size: 25px;
+
+}
+.booklist{
+  position: absolute;
+  
+  top:-15px;
+}
+.header{
+  height: 50px;
+  width: 100%;
+  background: white;
+  position: relative;
+}
+.search{
+  position: absolute;
+  top : 20%;
+  width: 600px;
+  left: 50%;
+}
+.shuru{
+  width: 500px;
+  height: 40px;
+}
+.dianji{
+  position: relative;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.quit{
+  position: absolute;
+  top : 5px;
+  width: 40px;
+  right: 5%;
+}
+.add{
+  position: absolute;
+  top : 20px;
+  right: 20%;
+}
+a{
+  text-decoration: none;
+}
+table{
+  font-size: 15px;
+  border: 1px solid black;
+
+}
+th,td{
+  text-align: center;
+  border: 1px solid black;
+}
+.unshow{
+  display: none;
+}
+.block{
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  border: 1px solid white;
+  background: white;
+  opacity: 0.85	;
+	filter: alpha(opacity=85);
+  /* opacity: 0.8	;
+	filter: alpha(opacity=80); */
+  
+}
+.line{
+  width : 200px;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+.line1{
+  width : 300px;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 25px;
+}
+.in{
+  width: 200px;
+}
+.btnadd{
+  color: #fff;
+  background-color: #000;
+  font-size: 15px;
+  height: 30px;
+  width: 100px;
+  position: relative;
+  top: -10px;
+  left:200px;
+  border: 2px solid rgb(18, 19, 18);
+}
+.btnquit{
+  position: relative;
+  color: #fff;
+  background-color: #000;
+  font-size: 15px;
+  height: 30px;
+  width: 100px;
+  top: 7px;
+  left: 90px; 
+  border: 2px solid rgb(24, 26, 24);
+}
+.btn{
+  width: 200px;
+  height: 40px;
+  position: relative;
+  top: 25px;
+  font-size: 20px;
+  background-color: #000;
+  color: #fff;
+}
+.zhuce{
+  /*background-color: rgb(181, 230, 223);*/
+  height: 700px;
+  margin: auto 350px;
+}
+.bbzhuce{
+  height: 700px;
+  margin: auto 350px;
+}

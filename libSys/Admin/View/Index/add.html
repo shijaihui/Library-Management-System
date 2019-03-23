@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- require  framework-->
+	<script type="text/javascript" src="__ROOT__/public/syspkg/vue.js"></script>
+	<script type="text/javascript" src="__ROOT__/public/syspkg/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="__ROOT__/public/syspkg/jquery-form.js"></script>
+	<script type="text/javascript" src="__ROOT__/public/syspkg/layer/layer.js"></script>
+	<script type="text/javascript" src="__ROOT__/public/syspkg/bootstrap3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="__ROOT__/public/syspkg/bootstrap3.3.7/css/bootstrap.min.css">
+	<!-- require user-defined -->
+	<script type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="__ROOT__/public/syspkg/css/add.css">
+	<title>index</title>
+</head>
+<body>
+
+<!-- html中尽量不要写样式，也不要写属性，html只用来布局框架，css写入public/syspkg/css文件夹下，使用vue后js大部分由vue承担，若需额外js，写到pbulic/syspkg/js文件夹下 -->
+	<div class="home" id="home">
+            <div class="line"></div>
+			<div class="line">
+				<label>staff_id</label>
+				<span><input type="text" id="staff_id" placeholder="please enter 6-11 number or words"></span>
+			</div>
+			<div class="line">
+				<label>name</label>
+				<span><input type="text" id="name"></span>	
+			</div>
+			<div class="line">
+				<label>password</label>
+				<span><input type="text" id="password" placeholder="please enter 6-11 number or words"  value="00010001"></span>	
+			</div>						
+			<div class="line">
+				<label>introduction</label>
+				<span><input type="text" id="introduction"></span>
+			</div>
+			<div class="line">
+				<label>telnum</label>
+				<span><input type="text" id="tel"></span>
+			</div>
+
+		<div class="line">
+			<label>email</label>
+			<span><input type="text" id="email"></span>
+		</div>
+			<div class="line">
+				<button class="btn" id="submit">submit</button>
+			</div>
+	</div>
+<script type="text/javascript" src="__ROOT__/public/syspkg/js/addInput.js">
+    // Vue.directives('focus', {
+    //     // 当被绑定的元素插入到 DOM 中时……
+    //     inserted: function (el) {
+    //         // 聚焦元素
+    //         el.focus()
+    //     }
+    // })
+    // $("input").focus(function() {
+    //     $(this).parent("span").addClass("active");
+    // });
+    // $("input").blur(function() {
+    //     if ($(this).val() == "") {
+    //         $(this).parent("span").removeClass("active");
+    //     }
+    // })
+    // var app = new Vue({
+	// 	data:{
+    //         isActive: [
+    //             true, false, false, false, false
+    //         ],
+	// 	},
+    //     methods: {
+    //         select: function (index) {
+    //             for(var i = 0; i <= 4; i++){
+    //                 this.isActive.splice(i, 0, false)
+	// 			}
+    //             this.isActive.splice(index, 0, true)
+    //         }
+    //     }
+    // })
+
+
+</script>
+</body>
+</html>

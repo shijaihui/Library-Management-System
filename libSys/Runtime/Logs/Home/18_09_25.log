@@ -1,0 +1,303 @@
+[ 2018-09-25T17:23:02+08:00 ] 127.0.0.1 /MKSYS/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.008090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.008189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.658147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.658253s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.037322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.037421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003792s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003892s ]
+
+[ 2018-09-25T18:05:47+08:00 ] 127.0.0.1 /MKSYS/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005697s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005756s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000838s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000873s ]
+
+[ 2018-09-25T18:05:55+08:00 ] 127.0.0.1 /MKSYS/home/index/excelTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+
+[ 2018-09-25T18:08:59+08:00 ] 127.0.0.1 /MKSYS/home/index/excelTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002124s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002228s ]
+
+[ 2018-09-25T18:09:41+08:00 ] 127.0.0.1 /MKSYS/home/index/excelTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000752s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000813s ]
+
+[ 2018-09-25T18:11:53+08:00 ] 127.0.0.1 /MKSYS/home/index/excelTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000575s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000643s ]
+
+[ 2018-09-25T18:19:01+08:00 ] 127.0.0.1 /MKSYS/home/index/excelTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001093s ]
+
+[ 2018-09-25T18:19:57+08:00 ] 127.0.0.1 /MKSYS/home/index/excelTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000972s ]
+NOTIC: [2] fopen(test.xls): failed to open stream: Permission denied D:\Nginx+PHP+Mysql\nginx\html\MKSYS\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Shared\OLE\PPS\Root.php 第 85 行.
+ERR: Can't open test.xls. It may be in use or protected.
+
+[ 2018-09-25T18:20:23+08:00 ] 127.0.0.1 /MKSYS/home/index/excelTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000470s ]
+
+[ 2018-09-25T23:04:15+08:00 ] 127.0.0.1 /MKSYS/home/index/excelTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.048025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.025312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.062336s ]
+INFO: [ app_end ] --END-- [ RunTime:0.062394s ]
+
+[ 2018-09-25T23:09:55+08:00 ] 127.0.0.1 /MKSYS/home/index/excelTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010485s ]
+NOTIC: [2] fopen(年度总结表.xls): failed to open stream: Invalid argument D:\Nginx+PHP+Mysql\nginx\html\MKSYS\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Shared\OLE\PPS\Root.php 第 85 行.
+ERR: Can't open 年度总结表.xls. It may be in use or protected.
+
+[ 2018-09-25T23:10:08+08:00 ] 127.0.0.1 /MKSYS/home/index/excelTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+NOTIC: [2] fopen(年度总结表.xls): failed to open stream: Invalid argument D:\Nginx+PHP+Mysql\nginx\html\MKSYS\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Shared\OLE\PPS\Root.php 第 85 行.
+ERR: Can't open 年度总结表.xls. It may be in use or protected.
+
+[ 2018-09-25T23:10:21+08:00 ] 127.0.0.1 /MKSYS/home/index/excelTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002690s ]
+NOTIC: [2] fopen(年度总结表.xls): failed to open stream: Invalid argument D:\Nginx+PHP+Mysql\nginx\html\MKSYS\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Shared\OLE\PPS\Root.php 第 85 行.
+ERR: Can't open 年度总结表.xls. It may be in use or protected.
+
+[ 2018-09-25T23:10:23+08:00 ] 127.0.0.1 /MKSYS/home/index/excelTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+NOTIC: [2] fopen(年度总结表.xls): failed to open stream: Invalid argument D:\Nginx+PHP+Mysql\nginx\html\MKSYS\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Shared\OLE\PPS\Root.php 第 85 行.
+ERR: Can't open 年度总结表.xls. It may be in use or protected.
+
+[ 2018-09-25T23:10:24+08:00 ] 127.0.0.1 /MKSYS/home/index/excelTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+NOTIC: [2] fopen(年度总结表.xls): failed to open stream: Invalid argument D:\Nginx+PHP+Mysql\nginx\html\MKSYS\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Shared\OLE\PPS\Root.php 第 85 行.
+ERR: Can't open 年度总结表.xls. It may be in use or protected.
+
+[ 2018-09-25T23:10:24+08:00 ] 127.0.0.1 /MKSYS/home/index/excelTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+NOTIC: [2] fopen(年度总结表.xls): failed to open stream: Invalid argument D:\Nginx+PHP+Mysql\nginx\html\MKSYS\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Shared\OLE\PPS\Root.php 第 85 行.
+ERR: Can't open 年度总结表.xls. It may be in use or protected.
+
+[ 2018-09-25T23:10:24+08:00 ] 127.0.0.1 /MKSYS/home/index/excelTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+NOTIC: [2] fopen(年度总结表.xls): failed to open stream: Invalid argument D:\Nginx+PHP+Mysql\nginx\html\MKSYS\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Shared\OLE\PPS\Root.php 第 85 行.
+ERR: Can't open 年度总结表.xls. It may be in use or protected.
+
+[ 2018-09-25T23:10:44+08:00 ] 127.0.0.1 /MKSYS/home/index/excelTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+NOTIC: [2] fopen(年度总结表.xls): failed to open stream: Invalid argument D:\Nginx+PHP+Mysql\nginx\html\MKSYS\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Shared\OLE\PPS\Root.php 第 85 行.
+ERR: Can't open 年度总结表.xls. It may be in use or protected.
+
+[ 2018-09-25T23:10:53+08:00 ] 127.0.0.1 /MKSYS/home/index/excelTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+NOTIC: [2] fopen(年度总结表.xls): failed to open stream: Invalid argument D:\Nginx+PHP+Mysql\nginx\html\MKSYS\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Shared\OLE\PPS\Root.php 第 85 行.
+ERR: Can't open 年度总结表.xls. It may be in use or protected.
+
+[ 2018-09-25T23:11:04+08:00 ] 127.0.0.1 /MKSYS/home/index/excelTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+NOTIC: [2] fopen(年度总结表.xls): failed to open stream: Invalid argument D:\Nginx+PHP+Mysql\nginx\html\MKSYS\ThinkPHP\Library\Vendor\PHPExcel\PHPExcel\Shared\OLE\PPS\Root.php 第 85 行.
+ERR: Can't open 年度总结表.xls. It may be in use or protected.
+
+[ 2018-09-25T23:11:40+08:00 ] 127.0.0.1 /MKSYS/home/index/excelTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007970s ]
+
+[ 2018-09-25T23:12:41+08:00 ] 127.0.0.1 /MKSYS/home/index/excelTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000521s ]
+
+[ 2018-09-25T23:17:13+08:00 ] 127.0.0.1 /MKSYS/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012417s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.016557s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.016609s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.234509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.234558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.029433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.029488s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009456s ]
+
+[ 2018-09-25T23:19:30+08:00 ] 127.0.0.1 /MKSYS/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006627s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000843s ]
+
+[ 2018-09-25T23:20:24+08:00 ] 127.0.0.1 /MKSYS/home/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048363s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000320s ]
+

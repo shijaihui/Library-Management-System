@@ -1,0 +1,996 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<!-- require  framework-->
+	<script type="text/javascript" src="/shijiahui/public/syspkg/vue.js"></script>
+	<script type="text/javascript" src="/shijiahui/public/syspkg/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="/shijiahui/public/syspkg/jquery-form.js"></script>
+	<script type="text/javascript" src="/shijiahui/public/syspkg/layer/layer.js"></script>
+	<script type="text/javascript" src="/shijiahui/public/syspkg/bootstrap3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/shijiahui/public/syspkg/bootstrap3.3.7/css/bootstrap.min.css">
+	<!-- require user-defined -->
+	<script type="text/javascript" src="/shijiahui/public/syspkg/js/jsonStrToObject.js"></script>
+	<link rel="stylesheet" type="text/css" href="/shijiahui/public/syspkg/css/home.css">
+	<link rel="stylesheet" type="text/css" href="/shijiahui/public/syspkg/css/admin_head.css" >
+	<link rel="stylesheet" type="text/css" href="/shijiahui/public/syspkg/css/admin_home.css">
+	<title>home</title>
+</head>
+
+<body class="body" id="body">
+<div class="mostlarge" id="mostlarge">
+	<!-- html中尽量不要写样式，也不要写属性，html只用来布局框架，css写入public/syspkg/css文件夹下，使用vue后js大部分由vue承担，若需额外js，写到pbulic/syspkg/js文件夹下 -->
+	
+		<!-- <nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header" style="height:100px">
+					<a class="biaoti" href="">BiblioSoft--Library</a>
+					<div class="search">
+						<input class="shuru" v-model="text" type="text" name="search" placeholder="Please enter the title">
+						<a href="javascript:void(0);"><img src="/shijiahui/public/syspkg/images/sousuo.png" alt="dianji" v-on:click="searchBook"
+							 class="dianji"></a>
+					</div>
+				</div>
+				<div class="daohang">
+					<ul class="nav navbar-nav">
+						<li v-bind:class="{ active : isActive[0] }" v-on:click="active(0)"><a href="javascript:void(0);">Book Management</a></li>
+						<li v-bind:class="{ active : isActive[1] }" v-on:click="active(1)"><a href="javascript:void(0);">Borrowing</a></li>
+						<li v-bind:class="{ active : isActive[2] }" v-on:click="active(2)"><a href="javascript:void(0);">Return</a></li>
+						<li v-bind:class="{ active : isActive[3] }" v-on:click="active(3)"><a href="javascript:void(0);">Reader
+								Management</a></li>
+						<li v-bind:class="{ active : isActive[4] }" v-on:click="active(4)"><a href="javascript:void(0);">Borrowing Record</a></li>
+						<li v-bind:class="{ active : isActive[5] }" v-on:click="active(5)"><a href="javascript:void(0);">Return Record</a></li>
+						<li v-bind:class="{ active : isActive[6] }" v-on:click="active(6)"><a href="javascript:void(0);">Delete History</a></li>
+						<li v-bind:class="{ active : isActive[7] }" v-on:click="active(7)"><a href="javascript:void(0);">Income History</a></li>
+						<li v-bind:class="{ active : isActive[8] }" v-on:click="active(8)"><a href="javascript:void(0);">Notice
+								Management</a></li>
+						<li><button v-on:click="quitSys" class="btnquit">Quit System</button></li>
+					</ul>
+				</div>
+			</div>
+		</nav> -->
+
+
+		<div id="head" class="head">
+			<div class="tit" ><h> Bibliosoft Library Management System</h> </div>
+			<div class="" style="float: right;margin-top: 20px;margin-right: 300px;" id="drop">
+				<img src="/shijiahui/public/syspkg/images/notlogin.png" class="img_head dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<ul class="dropdown-menu" style="position:relative;top:100px; left: 150px; width: 50px">
+					<!-- <li ><a href="javascript:void(0);" class="admin_ul_li_a" v-on:click="changePassword">change your password</a></li> -->
+					<li ><a href="javascript:void(0);" class="librarian_ul_li_a" v-on:click="quitSys">log out</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="top dropdown">
+			<img src="/shijiahui/public/syspkg/images/logo.png" width=90 height=90 class="timg3" >
+			<div class="dropdown-content">
+				<li font-size=20px v-bind:class="{ active : isActive[0] }" v-on:click="active(0)"><a href="javascript:void(0);">Book Management</a></li>
+				<div><li v-bind:class="{ active : isActive[1] }" v-on:click="active(1)"><a href="javascript:void(0);">Borrowing</a></li></div>
+				<li v-bind:class="{ active : isActive[2] }" v-on:click="active(2)"><a href="javascript:void(0);">Return</a></li>
+				<li v-bind:class="{ active : isActive[3] }" v-on:click="active(3)"><a href="javascript:void(0);">Reader
+						Management</a></li>
+				<li v-bind:class="{ active : isActive[4] }" v-on:click="active(4)"><a href="javascript:void(0);">Borrowing Record</a></li>
+				<li v-bind:class="{ active : isActive[5] }" v-on:click="active(5)"><a href="javascript:void(0);">Return Record</a></li>
+				<li v-bind:class="{ active : isActive[6] }" v-on:click="active(6)"><a href="javascript:void(0);">Delete History</a></li>
+				<li v-bind:class="{ active : isActive[7] }" v-on:click="active(7)"><a href="javascript:void(0);">Income History</a></li>
+				<li v-bind:class="{ active : isActive[8] }" v-on:click="active(8)"><a href="javascript:void(0);">Notice
+						Management</a></li>
+			</div>
+		</div>
+
+		<div class="home" id="home">
+		<!-- 图书管理 -->
+		<div v-bind:class="{ unshow : isShow[0] }" class="bookmanag">
+			<div class="header">
+				<div class="booklist">
+					<h1 style="font-family:serif">Recently Added</h1>
+				</div>
+				<div class="add">
+					<button v-on:click="addBook" class="btnadd">Add Book</button>
+				</div>
+			</div>
+			<div class="content">
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>ISBN</th>
+							<th>Title</th>
+							<th>Author</th>
+							<th>Press</th>
+							<th>Category</th>
+							<th>PubDate</th>
+							<th>Price</th>
+							<th>Floor</th>
+							<th>Bookshelf</th>
+							<th>Area Code</th>
+							<th>Number</th>
+							<th>options</th>
+						</tr>
+					</thead>
+					<tbody id="add">
+						<tr v-for="(book,index) in booklist" v-bind:id='index'>
+							<td>{{book.isbn}}</td>
+							<td>{{book.title}}</td>
+							<td>{{book.author}}</td>
+							<td>{{book.press}}</td>
+							<td>{{book.category}}</td>
+							<td>{{book.pub_date}}</td>
+							<td>{{book.price}}</td>
+							<td>{{book.floor}}</td>
+							<td>{{book.bookshelf}}</td>
+							<td>{{book.area_code}}</td>
+							<td>{{book.number}}</td>
+							<td><a href="javascript:void(0);" v-on:click="removeBook(index)">delete</a> <a href="javascript:void(0);"
+								 v-on:click="updateBook(index)">modify</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- 借书处理 -->
+		<div v-bind:class="{ unshow : isShow[1] }" class="zhuce">
+
+			<div class="block">
+				<div class="line1">Borrow Book</div>
+				<div class="line">
+					<label>UserId</label>
+					<span><input class="in" type="text" name="boruserId" v-model="boruserId"></span>
+				</div>
+				<div class="line">
+					<label>BookId</label>
+					<span><input class="in" type="text" name="borbookId" v-model="borbookId"></span>
+				</div>
+				<div class="line">
+					<label>Date</label>
+					<span><input class="in" type="date" name="borTime" v-model="borTime"></span>
+				</div>
+				<div class="line">
+					<label>Length / day</label>
+					<span><input class="in" type="text" name="borlength" v-model="borlength" value="30"></span>
+				</div>
+				<div class="line">
+					<label>Cost / ￥</label>
+					<span><input class="in" type="text" name="cost" v-model="cost" value="100"></span>
+				</div>
+				<div class="line">
+					<label>StaffId</label>
+					<span><input class="in" type="text" name="staffId" v-model="staffId"></span>
+				</div>
+
+				<div class="line">
+					<button class="btn" v-on:click="borrowBook">Borrow</button>
+				</div>
+
+			</div>
+
+
+		</div>
+		<!-- 还书处理 -->
+		<div v-bind:class="{ unshow : isShow[2] }" class="zhuce">
+			<div class="block">
+				<div class="line1">Return Book</div>
+				<div class="line">
+					<label>UserId</label>
+					<span><input class="in" type="text" name="userId" v-model="userId"></span>
+				</div>
+				<div class="line">
+					<label>BookId</label>
+					<span><input class="in" type="text" name="bookId" v-model="bookId"></span>
+				</div>
+				<div class="line">
+					<label>Date</label>
+					<span><input class="in" type="date" name="retTime" v-model="retTime"></span>
+				</div>
+				<div class="line">
+					<label>StaffId</label>
+					<span><input class="in" type="text" name="staffId" v-model="staffId"></span>
+				</div>
+				<div class="line">
+					<button class="btn" v-on:click="backBook">Return</button>
+				</div>
+
+			</div>
+		</div>
+		<!-- 注册新用户 -->
+		<div v-bind:class="{ unshow : isShow[3] }" class="zhuce">
+			<div class="block">
+				<div class="line1">Add New Readers</div>
+				<div class="line">
+					<label>Account</label>
+					<span><input class="in" type="text" name="account" v-model="account"></span>
+				</div>
+				<div class="line">
+					<label>Password</label>
+					<span><input class="in" type="password" name="password" v-model="password"></span>
+				</div>
+				<div class="line">
+					<label>Email</label>
+					<span><input class="in" type="email" name="email" v-model="email"></span>
+				</div>
+				<div class="line">
+					<button class="btn" v-on:click="addUser">Add</button>
+				</div>
+
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+		<div v-bind:class="{ unshow : isShow[4] }" class="borrowmanag">
+			<div class="header">
+				<div class="borrowlist">
+					<h1 style="font-family:serif">Borrowing Record</h1>
+				</div>
+				<!-- <div class="add">
+					<button v-on:click="addBook" class="btnadd">Add Book</button>
+				</div> -->
+			</div>
+			<div class="content">
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>Reader Name</th>
+							<th>Reader ID</th>
+							<th>Book Title</th>
+							<th>Book ID</th>
+							<th>Borrow Date</th>
+							<th>Borrow Length</th>
+							<th>Current Cost</th>
+							<th>Operator</th>
+						</tr>
+					</thead>
+					<tbody id="borrowlist">
+						<tr v-for="(book,index) in borrowlist" v-bind:id='index'>
+							<td>{{book.name}}</td>
+							<td>{{book.user_id}}</td>
+							<td>{{book.title}}</td>
+							<td>{{book.book_id}}</td>
+							<td>{{book.bor_time}}</td>
+							<td>{{book.bor_length}}</td>
+							<td>{{book.cost}}</td>
+							<td>{{book.staff_id}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div v-bind:class="{ unshow : isShow[5] }" class="returnmanag">
+			<div class="header">
+				<div class="returnlist">
+					<h1 style="font-family:serif">Return Record</h1>
+				</div>
+				<!-- <div class="add">
+					<button v-on:click="addBook" class="btnadd">Add Book</button>
+				</div> -->
+			</div>
+			<div class="content">
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>Reader Name</th>
+							<th>Reader ID</th>
+							<th>Book Title</th>
+							<th>Book ID</th>
+							<th>Borrow Date</th>
+							<th>Return Date</th>
+							<th>Fine</th>
+							<th>Operator</th>
+						</tr>
+					</thead>
+					<tbody id="returnlist">
+						<tr v-for="(book,index) in returnlist" v-bind:id='index'>
+							<td>{{book.name}}</td>
+							<td>{{book.user_id}}</td>
+							<td>{{book.title}}</td>
+							<td>{{book.book_id}}</td>
+							<td>{{book.bor_time}}</td>
+							<td>{{book.ret_time}}</td>
+							<td>{{book.fine}}</td>
+							<td>{{book.staff_id}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+
+		<div v-bind:class="{ unshow : isShow[6] }" class="deletemanag">
+			<div class="header">
+				<div class="deletelist">
+					<h1 style="font-family:serif">Delete History</h1>
+				</div>
+				<!-- <div class="add">
+					<button v-on:click="addBook" class="btnadd">Add Book</button>
+				</div> -->
+			</div>
+			<div class="content">
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>Book Name</th>
+							<th>Book ID</th>
+							<th>Delete Reason</th>
+							<th>Delete Time</th>
+							<th>Operator</th>
+						</tr>
+					</thead>
+					<tbody id="returnlist">
+						<tr v-for="(book,index) in deletelist" v-bind:id='index'>
+							<td>{{book.title}}</td>
+							<td>{{book.book_id}}</td>
+							<td>{{book.reason}}</td>
+							<td>{{book.remove_time}}</td>
+							<td>{{book.staff_id}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- Delete History -->
+		<div v-bind:class="{ unshow : isShow[7] }" class="zhuce">
+			<div class="block">
+				<div class="line1">Delete History</div>
+				<div class="line">
+					<label>Name</label>
+					<span><input class="in" type="text" name="user_name" v-model="user_name"></span>
+				</div>
+				<div class="line">
+					<label>Introduction</label>
+					<span><input class="in" type="text" name="introduction" v-model="introduction"></span>
+				</div>
+				<div class="line">
+					<label>PhoneNumber</label>
+					<span><input class="in" type="text" name="tel" v-model="tel"></span>
+				</div>
+				<div class="line">
+					<button class="btn" v-on:click="modify">Submit</button>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+	<!-- vue写到body结束标签的前面，因为vue需要挂载dom，所以必须写到dom结构的后面，vue用来做数据绑定，可以绑定数据、事件、dom属性等功能强大，异步数据访问用jquery ajax来做，路由由tp框架做，可以保证我们的项目是处于一个统一的路由下 -->
+	<script type="text/javascript">
+		/*vue*/
+		var app = new Vue({
+			el: '#mostlarge',
+			data: {
+				user_name: "Name",
+				introduction: "introduction",
+				tel: "tel",
+				staffId: "staffId",
+				account: "",
+				password: "",
+				email: "",
+				booklist: [],
+				borrowlist: [],
+				returnlist: [],
+				deletelist: [],
+				text: "",
+				borTime: "",
+				retTime: "",
+				isActive: [
+					true, false, false, false, false, false, false, false, false
+				],
+				isShow: [
+					false, true, true, true, true, true, true, true, true
+				],
+			},
+			created: function () {
+				//
+				var that = this
+				$.ajax({
+					url: "<?php echo U('Index/getBook');?>",
+					dataType: "json",
+					success: function (data) {
+						if (data.code == 'success') {
+
+							//将json字符串转为json对象
+							var jsonStr = data.data
+							//去掉字符串中的空格
+							jsonStr = jsonStr.replace(" ", "");
+							//typeof https://www.cnblogs.com/liu-fei-fei/p/7715870.html
+							if (typeof jsonStr != 'object') {
+								//去掉饭斜杠
+								jsonStr = jsonStr.replace(/\ufeff/g, "")
+								var jsonObj = JSON.parse(jsonStr)
+								that.booklist = jsonObj
+							}
+						}
+						if (data.code == 'fail') {
+							layer.msg(data.msg)
+						}
+					}
+				})
+
+				$.ajax({
+					url: "<?php echo U('Index/getBorrowList');?>",
+					dataType: "json",
+					success: function (data) {
+						if (data.code == 'success') {
+
+							//将json字符串转为json对象
+							var jsonStr = data.data
+							//去掉字符串中的空格
+							jsonStr = jsonStr.replace(" ", "");
+							//typeof https://www.cnblogs.com/liu-fei-fei/p/7715870.html
+							if (typeof jsonStr != 'object') {
+								//去掉饭斜杠
+								jsonStr = jsonStr.replace(/\ufeff/g, "")
+								var jsonObj = JSON.parse(jsonStr)
+								that.borrowlist = jsonObj
+							}
+						}
+						if (data.code == 'fail') {
+							layer.msg(data.msg)
+						}
+					}
+				})
+
+
+
+				$.ajax({
+					url: "<?php echo U('Index/getReturnList');?>",
+					dataType: "json",
+					success: function (data) {
+						if (data.code == 'success') {
+
+							//将json字符串转为json对象
+							var jsonStr = data.data
+							//去掉字符串中的空格
+							jsonStr = jsonStr.replace(" ", "");
+							//typeof https://www.cnblogs.com/liu-fei-fei/p/7715870.html
+							if (typeof jsonStr != 'object') {
+								//去掉饭斜杠
+								jsonStr = jsonStr.replace(/\ufeff/g, "")
+								var jsonObj = JSON.parse(jsonStr)
+								that.returnlist = jsonObj
+							}
+						}
+						if (data.code == 'fail') {
+							layer.msg(data.msg)
+						}
+					}
+				})
+
+
+
+
+				$.ajax({
+					url: "<?php echo U('Index/getDeleteList');?>",
+					dataType: "json",
+					success: function (data) {
+						if (data.code == 'success') {
+
+							//将json字符串转为json对象
+							var jsonStr = data.data
+							//去掉字符串中的空格
+							jsonStr = jsonStr.replace(" ", "");
+							//typeof https://www.cnblogs.com/liu-fei-fei/p/7715870.html
+							if (typeof jsonStr != 'object') {
+								//去掉饭斜杠
+								jsonStr = jsonStr.replace(/\ufeff/g, "")
+								var jsonObj = JSON.parse(jsonStr)
+								that.deletelist = jsonObj
+							}
+						}
+						if (data.code == 'fail') {
+							layer.msg(data.msg)
+						}
+					}
+				})
+
+
+				$.ajax({
+					url: "<?php echo U('Index/getInfo');?>",
+					type: "post",
+					contentType: "application/x-www-form-urlencoded;charset=utf-8",
+					dataType: "json",
+					success: function (data) {
+						if (data.code == 'success') {
+							//将json字符串转为json对象
+							var jsonStr = data.data
+							//去掉字符串中的空格
+							jsonStr = jsonStr.replace(" ", "");
+							//typeof https://www.cnblogs.com/liu-fei-fei/p/7715870.html
+							if (typeof jsonStr != 'object') {
+								//去掉饭斜杠
+								jsonStr = jsonStr.replace(/\ufeff/g, "")
+								var jsonObj = JSON.parse(jsonStr)
+								that.user_name = jsonObj[0].name
+								that.introduction = jsonObj[0].introduction
+								that.tel = jsonObj[0].tel
+								that.staffId = jsonObj[0].staff_id
+							}
+						}
+						if (data.code == 'fail') {
+							layer.msg(data.msg)
+						}
+					}
+				})
+
+				$.ajax({
+					url: "<?php echo U('Index/getDate');?>",
+					type: "post",
+					contentType: "application/x-www-form-urlencoded;charset=utf-8",
+					dataType: "json",
+					success: function (data) {
+						if (data.code == 'success') {
+							//将json字符串转为json对象
+							var jsonStr = data.data
+							that.retTime = jsonStr
+							that.borTime = jsonStr
+						}
+						if (data.code == 'fail') {
+							layer.msg(data.msg)
+						}
+					}
+				})
+
+			},
+			methods: {
+
+				active: function (index) {
+
+					for (var i = 0; i <= 8; i++) {
+						this.isActive.splice(i, 1, false)
+						this.isShow.splice(i, 1, true)
+						// this.isActive.$set(i,false)
+						// this.isShow.$set(i,true)
+					}
+					this.isActive.splice(index, 1, true)
+					this.isShow.splice(index, 1, false)
+					// this.isActive.$set(index,true)
+					// this.isShow.$set(index,false)
+
+				},
+				addUser: function (event) {
+					var that = this
+
+					$.ajax({
+						url: "<?php echo U('Index/addUser');?>",
+						type: "post",
+						contentType: "application/x-www-form-urlencoded;charset=utf-8",
+						data: {
+							user_id: that.account,
+							password: that.password,
+							email: that.email
+						},
+						dataType: "json",
+						success: function (data) {
+							if (data.code == 'success') {
+								layer.msg(data.msg)
+							}
+							if (data.code == 'fail') {
+								layer.msg(data.msg)
+							}
+						}
+					})
+				},
+
+
+
+
+
+				addBook: function (event) {
+					var that = this
+					layer.open({
+						type: 2,
+						title: 'add',
+						shadeClose: true,
+						shade: 0.8,
+						area: ['480px', '630px'],
+						content: "<?php echo U('Index/add');?>",//iframe的url
+						success: function (layero, index) {
+							var submit = layer.getChildFrame('#submit', index);
+							submit.click(function () {
+								var ISBN = layer.getChildFrame('#ISBN', index).val();
+								var title = layer.getChildFrame('#title', index).val();
+								var author = layer.getChildFrame('#author', index).val();
+								var press = layer.getChildFrame('#press', index).val();
+								var category = layer.getChildFrame('#category', index).val();
+								var pub_date = layer.getChildFrame('#pub_date', index).val();
+								var price = layer.getChildFrame('#price', index).val();
+								var floor = layer.getChildFrame('#floor', index).val();
+								var bookshelf = layer.getChildFrame('#bookshelf', index).val();
+								var area_code = layer.getChildFrame('#area_code', index).val();
+								var number = layer.getChildFrame('#number', index).val();
+
+
+								$.ajax({
+									url: "<?php echo U('Index/addBook');?>",
+									type: "post",
+									contentType: "application/x-www-form-urlencoded;charset=utf-8",
+									data: {
+										ISBN: ISBN,
+										title: title,
+										author: author,
+										press: press,
+										category: category,
+										pub_date: pub_date,
+										price: price,
+										floor: floor,
+										bookshelf: bookshelf,
+										area_code: area_code,
+										number: number,
+									},
+									dataType: "json",
+									success: function (data) {
+
+										if (data.code == 'success') {
+
+											layer.close(layer.index)
+											//将json字符串转为json对象
+											var arr = [
+												{
+													isbn: ISBN,
+													title: title,
+													author: author,
+													press: press,
+													category: category,
+													pub_date: pub_date,
+													price: price,
+													floor: floor,
+													bookshelf: bookshelf,
+													area_code: area_code,
+													number: number,
+												}
+											]
+											var jsonStr = JSON.stringify(arr)
+
+											//去掉字符串中的空格
+											jsonStr = jsonStr.replace(" ", "");
+											//typeof https://www.cnblogs.com/liu-fei-fei/p/7715870.html
+											if (typeof jsonStr != 'object') {
+												//去掉饭斜杠
+												jsonStr = jsonStr.replace(/\ufeff/g, "")
+												var jsonObj = JSON.parse(jsonStr)
+												that.booklist.unshift(jsonObj[0])
+
+											}
+											layer.msg(data.msg)
+										}
+										if (data.code == 'fail') {
+											layer.close(layer.index)
+											layer.msg(data.msg)
+										}
+									}
+								})
+							})
+						}
+
+					})
+				},
+
+
+
+
+
+				removeBook: function (index) {
+					var that = this
+					var book_id = that.booklist[index].book_id
+					$.ajax({
+						url: "<?php echo U('Index/removeBook');?>",
+						type: "post",
+						contentType: "application/x-www-form-urlencoded;charset=utf-8",
+						data: {
+							book_id: book_id
+						},
+						dataType: "json",
+						success: function (data) {
+							if (data.code == 'success') {
+								$("tr#" + index).hide()
+								layer.msg(data.msg)
+							}
+							if (data.code == 'fail') {
+								layer.msg(data.msg)
+							}
+						}
+					})
+				},
+				updateBook: function (index) {
+					var that = this
+					var isbn = that.booklist[index].isbn
+					layer.open({
+						type: 2,
+						title: 'update',
+						shadeClose: true,
+						shade: 0.8,
+						area: ['480px', '570px'],
+						content: "<?php echo U('Index/update');?>",//iframe的url
+						success: function (layero, index) {
+							var submit = layer.getChildFrame('#modify', index);
+							submit.click(function () {
+								var title = layer.getChildFrame('#title', index).val();
+								var author = layer.getChildFrame('#author', index).val();
+								var press = layer.getChildFrame('#press', index).val();
+								var category = layer.getChildFrame('#category', index).val();
+								var pub_date = layer.getChildFrame('#pub_date', index).val();
+								var price = layer.getChildFrame('#price', index).val();
+								var floor = layer.getChildFrame('#floor', index).val();
+								var bookshelf = layer.getChildFrame('#bookshelf', index).val();
+								var area_code = layer.getChildFrame('#area_code', index).val();
+
+
+								$.ajax({
+									url: "<?php echo U('Index/updateBook');?>",
+									type: "post",
+									contentType: "application/x-www-form-urlencoded;charset=utf-8",
+									data: {
+										ISBN: isbn,
+										title: title,
+										author: author,
+										press: press,
+										category: category,
+										pub_date: pub_date,
+										price: price,
+										floor: floor,
+										bookshelf: bookshelf,
+										area_code: area_code,
+									},
+									dataType: "json",
+									success: function (data) {
+
+										if (data.code == 'success') {
+
+											// layer.close(layer.index)
+											// //将json字符串转为json对象
+											// var arr = [
+											// 	{
+											// 		isbn: ISBN,
+											// 		title: title,
+											// 		author: author,
+											// 		press: press,
+											// 		category: category,
+											// 		pub_date: pub_date,
+											// 		price: price,
+											// 		floor: floor,
+											// 		bookshelf: bookshelf,
+											// 		area_code: area_code,
+											// 		number: number,
+											// 	}
+											// ]
+											// var jsonStr = JSON.stringify(arr)
+
+											// //去掉字符串中的空格
+											// jsonStr = jsonStr.replace(" ", "");
+											// //typeof https://www.cnblogs.com/liu-fei-fei/p/7715870.html
+											// if (typeof jsonStr != 'object') {
+											// 	//去掉饭斜杠
+											// 	jsonStr = jsonStr.replace(/\ufeff/g, "")
+											// 	var jsonObj = JSON.parse(jsonStr)
+											// 	that.booklist.unshift(jsonObj[0])
+
+											// }
+											layer.msg(data.msg)
+										}
+										if (data.code == 'fail') {
+											layer.close(layer.index)
+											layer.msg(data.msg)
+										}
+									}
+								})
+							})
+						}
+
+					})
+				},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				searchBook: function (event) {
+
+					var that = this
+					/*
+					 * 这里是异步数据访问
+					 */
+					$.ajax({
+						url: "<?php echo U('Index/searchBook');?>",
+						type: "post",
+						contentType: "application/x-www-form-urlencoded;charset=utf-8",
+						data: {
+							text: that.text
+						},
+						dataType: "json",
+						success: function (data) {
+
+							if (data.code == 'success') {
+								layer.msg(data.msg)
+								//将json字符串转为json对象
+								var jsonStr = data.data
+								//去掉字符串中的空格
+								jsonStr = jsonStr.replace(" ", "");
+								//typeof https://www.cnblogs.com/liu-fei-fei/p/7715870.html
+								if (typeof jsonStr != 'object') {
+									//去掉饭斜杠
+									jsonStr = jsonStr.replace(/\ufeff/g, "")
+									var jsonObj = JSON.parse(jsonStr)
+									that.booklist = jsonObj
+								}
+							}
+							if (data.code == 'fail') {
+								layer.msg(data.msg)
+							}
+						}
+					})
+				},
+				quitSys: function (event) {
+					var that = this
+					$.ajax({
+						url: "<?php echo U('Index/quit');?>",
+						dataType: "json",
+						success: function (data) {
+							if (data.code == 'success') {
+								layer.msg(data.msg)
+								window.location.href = "<?php echo U('Index/index');?>"
+							}
+
+							if (data.code == 'fail') {
+								layer.msg(data.msg)
+							}
+						}
+					})
+				},
+
+
+
+
+
+
+				toUserInfo: function (event) {
+					window.location.href = "<?php echo U('Index/info');?>";
+				},
+				modify: function (event) {
+					var that = this
+
+					$.ajax({
+						url: "<?php echo U('Index/updateInfo');?>",
+						type: "post",
+						contentType: "application/x-www-form-urlencoded;charset=utf-8",
+						data: {
+							user_name: that.user_name,
+							introduction: that.introduction,
+							tel: that.tel
+						},
+						dataType: "json",
+						success: function (data) {
+							if (data.code == 'success') {
+								layer.msg(data.msg)
+							}
+
+							if (data.code == 'fail') {
+								layer.msg(data.msg)
+							}
+						}
+					})
+				},
+				backBook: function (event) {
+
+					var that = this
+					$.ajax({
+						url: "<?php echo U('Index/returnBook');?>",
+						type: "post",
+						contentType: "application/x-www-form-urlencoded;charset=utf-8",
+						dataType: "json",
+						data: {
+							userId: that.userId,
+							bookId: that.bookId,
+							retTime: that.retTime,
+							staffId: that.staffId
+						},
+						success: function (data) {
+
+							if (data.code == 'success') {
+								layer.msg(data.msg)
+							}
+
+							if (data.code == 'fail') {
+								layer.msg(data.msg)
+							}
+						}
+					})
+				},
+				borrowBook: function (event) {
+					var that = this
+					$.ajax({
+						url: "<?php echo U('Index/borrowBook');?>",
+						type: "post",
+						contentType: "application/x-www-form-urlencoded;charset=utf-8",
+						dataType: "json",
+						data: {
+							boruserId: that.boruserId,
+							borbookId: that.borbookId,
+							borTime: that.borTime,
+							borlength: that.borlength,
+							cost: that.cost,
+							staffId: that.staffId
+						},
+						success: function (data) {
+
+							if (data.code == 'success') {
+								layer.msg(data.msg)
+							}
+
+							if (data.code == 'fail') {
+								layer.msg(data.msg)
+							}
+						}
+					})
+				}
+			}
+
+		})
+	</script>
+</body>
+
+</html>

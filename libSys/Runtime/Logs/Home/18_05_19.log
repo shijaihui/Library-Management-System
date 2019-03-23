@@ -1,0 +1,3019 @@
+[ 2018-05-19T15:56:32+08:00 ] ::1 /mksys/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.059276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.027295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.027353s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.237976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.238019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.026841s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.026882s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014066s ]
+
+[ 2018-05-19T15:56:43+08:00 ] ::1 /mksys/index.php/home/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+SQL:  select auth from think_login where id = '2016303117' and pd = '123456'  [ RunTime:0.0410s ]
+NOTIC: [8] Use of undefined constant auth - assumed 'auth' D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\IndexController.class.php 第 22 行.
+SQL: select name from think_user_info where id='2016303117'  [ RunTime:0.0452s ]
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\IndexController.class.php 第 41 行.
+
+[ 2018-05-19T15:56:43+08:00 ] ::1 /mksys/index.php/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+SQL: select id,pd from think_login where auth='C1_B5'  [ RunTime:0.0147s ]
+SQL: select id,pd from think_login where auth='C2_B5'   [ RunTime:0.0004s ]
+SQL: select id,pd from think_login where auth='D_C3_B5'  [ RunTime:0.0002s ]
+SQL: select c1.id,c2.name,c1.dep,c1.pos,c1.title,c1.lv from think_user_job c1,think_user_info c2 where c1.id=c2.id   and ison='YES'  [ RunTime:0.0274s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.144408s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.144495s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000413s ]
+
+[ 2018-05-19T16:02:26+08:00 ] ::1 /mksys/index.php/home/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+SQL:  select auth from think_login where id = '2016303110' and pd = '123456'  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant auth - assumed 'auth' D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\IndexController.class.php 第 22 行.
+SQL: select name from think_user_info where id='2016303110'  [ RunTime:0.0002s ]
+
+[ 2018-05-19T16:02:26+08:00 ] ::1 /mksys/index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+SQL: select * from think_user_info where id = '2016303110'  [ RunTime:0.0319s ]
+SQL: select * from think_user_job where id = '2016303110'  [ RunTime:0.0003s ]
+SQL: select * from think_user_edu where id = '2016303110'  [ RunTime:0.0551s ]
+SQL: select pd from think_login where id ='2016303110'  [ RunTime:0.0006s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='WAIT'  [ RunTime:0.0623s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='YES'  [ RunTime:0.0006s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv,c2.reason from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='NO'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000591s ]
+
+[ 2018-05-19T16:02:30+08:00 ] ::1 /mksys/index.php/home/home/generalteacheruserinf.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+SQL: select * from think_user_info where id = '2016303110'  [ RunTime:0.0004s ]
+SQL: select * from think_user_job where id = '2016303110'  [ RunTime:0.0002s ]
+SQL: select * from think_user_edu where id = '2016303110'  [ RunTime:0.0002s ]
+SQL: select pd from think_login where id ='2016303110'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070297s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070335s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000524s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000553s ]
+
+[ 2018-05-19T16:02:39+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='WAIT'  [ RunTime:0.0004s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='YES'  [ RunTime:0.0003s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv,c2.reason from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='NO'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.191349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.191398s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2018-05-19T16:02:42+08:00 ] ::1 /mksys/index.php/home/home/getteachachwait.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+ERR: 非法操作:getteachachwait
+
+[ 2018-05-19T16:02:43+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachAchAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018560s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000391s ]
+
+[ 2018-05-19T16:02:53+08:00 ] ::1 /mksys/index.php/home/home/generalteacherresearchpap.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082165s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000163s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000627s ]
+
+[ 2018-05-19T16:02:59+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='WAIT'  [ RunTime:0.0004s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='YES'  [ RunTime:0.0002s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv,c2.reason from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='NO'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073262s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073299s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000679s ]
+
+[ 2018-05-19T16:03:35+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='WAIT'  [ RunTime:0.0008s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='YES'  [ RunTime:0.0002s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv,c2.reason from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='NO'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065624s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000490s ]
+
+[ 2018-05-19T16:03:38+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082285s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000444s ]
+
+[ 2018-05-19T16:04:20+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='WAIT'  [ RunTime:0.0006s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='YES'  [ RunTime:0.0002s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv,c2.reason from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='NO'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064986s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000620s ]
+
+[ 2018-05-19T16:04:26+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050041s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000700s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000780s ]
+
+[ 2018-05-19T16:06:49+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046684s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046727s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000748s ]
+
+[ 2018-05-19T16:08:51+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Undefined variable: teachProWAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\6e6b0a45f3152ebc7694194fc591f0b8.php 第 261 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057444s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057483s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000553s ]
+
+[ 2018-05-19T16:10:48+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+NOTIC: [8] Undefined variable: teachProWAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\6e6b0a45f3152ebc7694194fc591f0b8.php 第 261 行.
+NOTIC: [8] Undefined variable: teachProYES D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\6e6b0a45f3152ebc7694194fc591f0b8.php 第 301 行.
+NOTIC: [8] Undefined variable: teachProNO D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\6e6b0a45f3152ebc7694194fc591f0b8.php 第 345 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064968s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2018-05-19T16:13:09+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachtbp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089223s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000616s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000651s ]
+
+[ 2018-05-19T16:13:38+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.038446s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined variable: teachProWAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\6e6b0a45f3152ebc7694194fc591f0b8.php 第 261 行.
+NOTIC: [8] Undefined variable: teachProYES D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\6e6b0a45f3152ebc7694194fc591f0b8.php 第 301 行.
+NOTIC: [8] Undefined variable: teachProNO D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\6e6b0a45f3152ebc7694194fc591f0b8.php 第 345 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078253s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078291s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000754s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000800s ]
+
+[ 2018-05-19T16:19:35+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined variable: teachProWAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\6e6b0a45f3152ebc7694194fc591f0b8.php 第 261 行.
+NOTIC: [8] Undefined variable: teachProYES D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\6e6b0a45f3152ebc7694194fc591f0b8.php 第 303 行.
+NOTIC: [8] Undefined variable: teachProNO D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\6e6b0a45f3152ebc7694194fc591f0b8.php 第 349 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2018-05-19T16:29:08+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.053676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.042285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.042338s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='WAIT'  [ RunTime:0.1220s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='YES'  [ RunTime:0.0005s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv,c2.reason from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='NO'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.243161s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.243206s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.032157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.032195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.152442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.152516s ]
+
+[ 2018-05-19T16:29:09+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachAchAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000342s ]
+
+[ 2018-05-19T16:29:16+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='WAIT'  [ RunTime:0.0006s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='YES'  [ RunTime:0.0003s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv,c2.reason from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='NO'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066178s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000479s ]
+
+[ 2018-05-19T17:14:14+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='WAIT'  [ RunTime:0.0011s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='YES'  [ RunTime:0.0003s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv,c2.reason from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='NO'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070118s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070159s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2018-05-19T17:14:18+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+NOTIC: [8] Undefined variable: teachProWAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\6e6b0a45f3152ebc7694194fc591f0b8.php 第 282 行.
+NOTIC: [8] Undefined variable: teachProYES D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\6e6b0a45f3152ebc7694194fc591f0b8.php 第 324 行.
+NOTIC: [8] Undefined variable: teachProNO D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\6e6b0a45f3152ebc7694194fc591f0b8.php 第 370 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066983s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000542s ]
+
+[ 2018-05-19T17:14:19+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachAchAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017718s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017780s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000454s ]
+
+[ 2018-05-19T17:15:48+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined variable: teachProWAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\6e6b0a45f3152ebc7694194fc591f0b8.php 第 282 行.
+NOTIC: [8] Undefined variable: teachProYES D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\6e6b0a45f3152ebc7694194fc591f0b8.php 第 324 行.
+NOTIC: [8] Undefined variable: teachProNO D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\6e6b0a45f3152ebc7694194fc591f0b8.php 第 370 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066055s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066119s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000697s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000733s ]
+
+[ 2018-05-19T17:15:50+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachProAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+ERR: 非法操作:generalteacherteachproadd
+
+[ 2018-05-19T17:19:37+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined variable: teachProWAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\6e6b0a45f3152ebc7694194fc591f0b8.php 第 282 行.
+NOTIC: [8] Undefined variable: teachProYES D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\6e6b0a45f3152ebc7694194fc591f0b8.php 第 324 行.
+NOTIC: [8] Undefined variable: teachProNO D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\6e6b0a45f3152ebc7694194fc591f0b8.php 第 370 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070910s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070944s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000593s ]
+
+[ 2018-05-19T17:19:39+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachProAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016975s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000448s ]
+
+[ 2018-05-19T17:25:14+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+NOTIC: [8] Undefined variable: teachProWAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\6e6b0a45f3152ebc7694194fc591f0b8.php 第 282 行.
+NOTIC: [8] Undefined variable: teachProYES D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\6e6b0a45f3152ebc7694194fc591f0b8.php 第 324 行.
+NOTIC: [8] Undefined variable: teachProNO D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\6e6b0a45f3152ebc7694194fc591f0b8.php 第 370 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.135383s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.135460s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001437s ]
+
+[ 2018-05-19T17:25:15+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachProAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010824s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000870s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000930s ]
+
+[ 2018-05-19T17:25:50+08:00 ] ::1 /mksys/index.php/home/home/insertteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+NOTIC: [8] Undefined index: proTp D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 494 行.
+NOTIC: [8] Undefined index: proTm D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 495 行.
+NOTIC: [8] Undefined index: proFund D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 496 行.
+NOTIC: [8] Undefined index: proPaid D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 497 行.
+NOTIC: [8] Undefined index: proRemain D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 498 行.
+NOTIC: [8] Undefined index: proSup D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 499 行.
+SQL: select timer from think_sys_timer where ptype='teach_pro' and years=2018  [ RunTime:0.1039s ]
+
+[ 2018-05-19T17:25:50+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachProAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2018-05-19T17:28:00+08:00 ] ::1 /mksys/index.php/home/home/insertteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+NOTIC: [8] Undefined index: proTp D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 494 行.
+NOTIC: [8] Undefined index: proTm D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 495 行.
+NOTIC: [8] Undefined index: proFund D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 496 行.
+NOTIC: [8] Undefined index: proPaid D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 497 行.
+NOTIC: [8] Undefined index: proRemain D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 498 行.
+SQL: select timer from think_sys_timer where ptype='teach_pro' and years=2018  [ RunTime:0.0004s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL:  update think_sys_timer set timer=2 where  ptype='teach_pro' and years=2018  [ RunTime:0.1528s ]
+SQL: SHOW COLUMNS FROM `think_teach_pro` [ RunTime:0.0927s ]
+SQL: insert into think_teach_pro values(1,2018,'teach_pro','7000','','','','','','/Public/support/2016303110/小芳_teachPro_1.docx') [ RunTime:0.0719s ]
+SQL: insert into think_map_status values('2016303110',2018,'teach_pro',1,'WAIT','')  [ RunTime:0.0379s ]
+
+[ 2018-05-19T17:28:00+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachProAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2018-05-19T17:28:00+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Undefined variable: teachProWAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\6e6b0a45f3152ebc7694194fc591f0b8.php 第 282 行.
+NOTIC: [8] Undefined variable: teachProYES D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\6e6b0a45f3152ebc7694194fc591f0b8.php 第 324 行.
+NOTIC: [8] Undefined variable: teachProNO D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\6e6b0a45f3152ebc7694194fc591f0b8.php 第 370 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075869s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000945s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001012s ]
+
+[ 2018-05-19T17:37:22+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `think_teach_ach` [ RunTime:0.0097s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='WAIT'  [ RunTime:0.0004s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='YES'  [ RunTime:0.0002s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv,c2.reason from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='NO'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined variable: teachProWAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\6e6b0a45f3152ebc7694194fc591f0b8.php 第 282 行.
+NOTIC: [8] Undefined variable: teachProYES D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\6e6b0a45f3152ebc7694194fc591f0b8.php 第 324 行.
+NOTIC: [8] Undefined variable: teachProNO D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\6e6b0a45f3152ebc7694194fc591f0b8.php 第 370 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074367s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000563s ]
+
+[ 2018-05-19T17:37:25+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='WAIT'  [ RunTime:0.0004s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='YES'  [ RunTime:0.0002s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv,c2.reason from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='NO'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072961s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000911s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000961s ]
+
+[ 2018-05-19T17:37:29+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachAchAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018795s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000334s ]
+
+[ 2018-05-19T17:37:49+08:00 ] ::1 /mksys/index.php/home/home/insertteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `think_sys_timer` [ RunTime:0.0141s ]
+SQL: select timer from think_sys_timer where ptype='teach_ach' and years=2018  [ RunTime:0.0003s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL:  update think_sys_timer set timer=48 where  ptype='teach_ach' and years=2018  [ RunTime:0.0398s ]
+SQL: insert into think_teach_ach values(47,2018,'teach_ach','happy','梦之翼','2018-05-19','8','/Public/support/2016303110/小芳_teachAch_47.docx') [ RunTime:0.0321s ]
+SQL: SHOW COLUMNS FROM `think_map_status` [ RunTime:0.0383s ]
+SQL: insert into think_map_status values('2016303110',2018,'teach_ach',47,'WAIT','')  [ RunTime:0.0409s ]
+
+[ 2018-05-19T17:37:49+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachAchAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007681s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000467s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2018-05-19T17:37:49+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='WAIT'  [ RunTime:0.0179s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='YES'  [ RunTime:0.0004s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv,c2.reason from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='NO'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075357s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001074s ]
+
+[ 2018-05-19T17:37:54+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachAchEdit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001019s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001717s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001829s ]
+
+[ 2018-05-19T17:38:20+08:00 ] ::1 /mksys/index.php/home/home/updateteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: update think_teach_ach set name='happy2',dep='梦之翼',tm='2018-05-19',lv='8',sup='/Public/support/2016303110/小芳_teachAch_47.docx' where num=47 and years=2018 and ptype='teach_ach'  [ RunTime:0.0576s ]
+SQL:  select status from think_map_status where num=47 and years=2018 and ptype='teach_ach' and id='2016303110'  [ RunTime:0.0003s ]
+
+[ 2018-05-19T17:38:20+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachAchEdit.html?achName=happy2&achDep=%E6%A2%A6%E4%B9%8B%E7%BF%BC&achTime=2018-05-19&achLv=8&achSup=C%3A%5CUsers%5CAngelLover%5CDocuments%5Chuffman2.docx&submit=%E4%BF%9D%E5%AD%98%E5%B9%B6%E6%8F%90%E4%BA%A4%E5%AE%A1%E6%A0%B8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007212s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007278s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000692s ]
+
+[ 2018-05-19T17:38:20+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001632s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='WAIT'  [ RunTime:0.0007s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='YES'  [ RunTime:0.0003s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv,c2.reason from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='NO'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000988s ]
+
+[ 2018-05-19T17:38:50+08:00 ] ::1 /mksys/index.php/home/home/deleteteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+SQL: select sup from think_teach_ach where num=47 and years=2018 and ptype='teach_ach'  [ RunTime:0.0007s ]
+SQL: delete from think_teach_ach where num=47 and years=2018 and ptype='teach_ach'  [ RunTime:0.0905s ]
+SQL: delete from think_map_status where id='2016303110' and num=47 and years=2018 and ptype='teach_ach'  [ RunTime:0.0208s ]
+
+[ 2018-05-19T17:38:50+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001005s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='WAIT'  [ RunTime:0.0006s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='YES'  [ RunTime:0.0003s ]
+SQL: select c1.years,c1.num, c1.name,c1.dep,c1.tm,c1.lv,c2.reason from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='NO'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000964s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000998s ]
+
+[ 2018-05-19T17:39:11+08:00 ] ::1 /mksys/index.php/home/home/getteachachwait.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+ERR: 非法操作:getteachachwait
+
+[ 2018-05-19T17:49:33+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='WAIT'  [ RunTime:0.0004s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='YES'  [ RunTime:0.0003s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='NO'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074054s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000632s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000664s ]
+
+[ 2018-05-19T17:50:48+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='WAIT'  [ RunTime:0.0006s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='YES'  [ RunTime:0.0003s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='NO'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095304s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000510s ]
+
+[ 2018-05-19T17:51:49+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='WAIT'  [ RunTime:0.0006s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='YES'  [ RunTime:0.0003s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='NO'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070585s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2018-05-19T17:52:37+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='WAIT'  [ RunTime:0.0007s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='YES'  [ RunTime:0.0005s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='NO'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071539s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071580s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000648s ]
+
+[ 2018-05-19T17:52:39+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachAchAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007360s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007422s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2018-05-19T17:52:51+08:00 ] ::1 /mksys/index.php/home/home/insertteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+SQL: select timer from think_sys_timer where ptype='teach_ach' and years=2018  [ RunTime:0.0004s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL:  update think_sys_timer set timer=49 where  ptype='teach_ach' and years=2018  [ RunTime:0.0486s ]
+SQL: insert into think_teach_ach values(48,2018,'teach_ach','happy','dep2','2018-05-19','3','/Public/support/2016303110/小芳_teachAch_48.docx') [ RunTime:0.0407s ]
+SQL: insert into think_map_status values('2016303110',2018,'teach_ach',48,'WAIT','')  [ RunTime:0.0701s ]
+
+[ 2018-05-19T17:52:51+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachAchAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007533s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000631s ]
+
+[ 2018-05-19T17:52:51+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='WAIT'  [ RunTime:0.0005s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='YES'  [ RunTime:0.0006s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='NO'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000653s ]
+
+[ 2018-05-19T17:52:56+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='WAIT'  [ RunTime:0.0003s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='YES'  [ RunTime:0.0002s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='NO'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069944s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069982s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000619s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000649s ]
+
+[ 2018-05-19T17:53:33+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='WAIT'  [ RunTime:0.0004s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='YES'  [ RunTime:0.0003s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='NO'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070987s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071044s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000672s ]
+
+[ 2018-05-19T17:54:30+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachProAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017232s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000466s ]
+
+[ 2018-05-19T17:54:53+08:00 ] ::1 /mksys/index.php/home/home/insertteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+NOTIC: [8] Undefined index: proTp D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 523 行.
+NOTIC: [8] Undefined index: proTm D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 524 行.
+NOTIC: [8] Undefined index: proFund D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 525 行.
+NOTIC: [8] Undefined index: proPaid D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 526 行.
+NOTIC: [8] Undefined index: proRemain D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 527 行.
+SQL: select timer from think_sys_timer where ptype='teach_pro' and years=2018  [ RunTime:0.0003s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL:  update think_sys_timer set timer=3 where  ptype='teach_pro' and years=2018  [ RunTime:0.1985s ]
+SQL: insert into think_teach_pro values(2,2018,'teach_pro','23333','','','','','','/Public/support/2016303110/小芳_teachPro_2.docx') [ RunTime:0.0773s ]
+SQL: insert into think_map_status values('2016303110',2018,'teach_pro',2,'WAIT','')  [ RunTime:0.0926s ]
+
+[ 2018-05-19T17:54:53+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachProAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008373s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000693s ]
+
+[ 2018-05-19T17:54:53+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='WAIT'  [ RunTime:0.0004s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='YES'  [ RunTime:0.0003s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='NO'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068186s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000910s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000982s ]
+
+[ 2018-05-19T17:58:32+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='WAIT'  [ RunTime:0.0010s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='YES'  [ RunTime:0.0006s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='NO'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077497s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077551s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000720s ]
+
+[ 2018-05-19T17:58:33+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachProAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018622s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000447s ]
+
+[ 2018-05-19T17:59:00+08:00 ] ::1 /mksys/index.php/home/home/insertteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+SQL: select timer from think_sys_timer where ptype='teach_pro' and years=2018  [ RunTime:0.0003s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL:  update think_sys_timer set timer=4 where  ptype='teach_pro' and years=2018  [ RunTime:0.0503s ]
+SQL: insert into think_teach_pro values(3,2018,'teach_pro','啥地方','3','2018-05-19','455','444','12','/Public/support/2016303110/小芳_teachPro_3.docx') [ RunTime:0.0340s ]
+SQL: insert into think_map_status values('2016303110',2018,'teach_pro',3,'WAIT','')  [ RunTime:0.0390s ]
+
+[ 2018-05-19T17:59:00+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachProAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010611s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000467s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2018-05-19T17:59:00+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='WAIT'  [ RunTime:0.0008s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='YES'  [ RunTime:0.0004s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='NO'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077152s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000865s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000899s ]
+
+[ 2018-05-19T18:06:22+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='WAIT'  [ RunTime:0.0005s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='YES'  [ RunTime:0.0003s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='NO'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072357s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072395s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000564s ]
+
+[ 2018-05-19T18:06:27+08:00 ] ::1 /mksys/index.php/home/home/deleteteachapro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+ERR: 非法操作:deleteteachapro
+
+[ 2018-05-19T18:06:27+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='WAIT'  [ RunTime:0.0008s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='YES'  [ RunTime:0.0003s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='NO'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069232s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000456s ]
+
+[ 2018-05-19T18:06:31+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='WAIT'  [ RunTime:0.0006s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='YES'  [ RunTime:0.0004s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='NO'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069796s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000447s ]
+
+[ 2018-05-19T18:07:41+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='WAIT'  [ RunTime:0.0005s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='YES'  [ RunTime:0.0003s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='NO'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000819s ]
+
+[ 2018-05-19T18:07:44+08:00 ] ::1 /mksys/index.php/home/home/deleteteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001083s ]
+SQL: select sup from think_teach_pro where num=1 and years=2018 and ptype='teach_pro'  [ RunTime:0.0006s ]
+SQL: delete from think_teach_pro where num=1 and years=2018 and ptype='teach_pro'  [ RunTime:0.0921s ]
+SQL: delete from think_map_status where id='2016303110' and num=1 and years=2018 and ptype='teach_pro'  [ RunTime:0.0658s ]
+
+[ 2018-05-19T18:07:44+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='WAIT'  [ RunTime:0.0007s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='YES'  [ RunTime:0.0003s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='NO'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070628s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070665s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000695s ]
+
+[ 2018-05-19T18:08:04+08:00 ] ::1 /mksys/index.php/home/home/deleteteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+SQL: select sup from think_teach_pro where num=2 and years=2018 and ptype='teach_pro'  [ RunTime:0.0007s ]
+SQL: delete from think_teach_pro where num=2 and years=2018 and ptype='teach_pro'  [ RunTime:0.0719s ]
+SQL: delete from think_map_status where id='2016303110' and num=2 and years=2018 and ptype='teach_pro'  [ RunTime:0.0299s ]
+
+[ 2018-05-19T18:08:04+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='WAIT'  [ RunTime:0.0004s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='YES'  [ RunTime:0.0003s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='NO'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070774s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000713s ]
+
+[ 2018-05-19T18:08:20+08:00 ] ::1 /mksys/index.php/home/home/generalteacheruserinf.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `think_user_info` [ RunTime:0.0105s ]
+SQL: select * from think_user_info where id = '2016303110'  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_user_job` [ RunTime:0.0076s ]
+SQL: select * from think_user_job where id = '2016303110'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_user_edu` [ RunTime:0.0072s ]
+SQL: select * from think_user_edu where id = '2016303110'  [ RunTime:0.0003s ]
+SQL: select pd from think_login where id ='2016303110'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000588s ]
+
+[ 2018-05-19T18:08:23+08:00 ] ::1 /mksys/index.php/home/index/quit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000411s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000461s ]
+
+[ 2018-05-19T18:08:23+08:00 ] ::1 /mksys/index.php/home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018589s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000383s ]
+
+[ 2018-05-19T18:08:28+08:00 ] ::1 /mksys/index.php/home/home/changeemail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073488s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+
+[ 2018-05-19T18:08:37+08:00 ] ::1 /mksys/index.php/home/home/changeemail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005210s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005280s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000373s ]
+
+[ 2018-05-19T18:08:45+08:00 ] ::1 /mksys/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004740s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2018-05-19T18:11:34+08:00 ] ::1 /mksys/index.php/home/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL:  select auth from think_login where id = '2016303110' and pd = '123456'  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant auth - assumed 'auth' D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\IndexController.class.php 第 22 行.
+SQL: select name from think_user_info where id='2016303110'  [ RunTime:0.0002s ]
+
+[ 2018-05-19T18:11:34+08:00 ] ::1 /mksys/index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+SQL: select * from think_user_info where id = '2016303110'  [ RunTime:0.0007s ]
+SQL: select * from think_user_job where id = '2016303110'  [ RunTime:0.0002s ]
+SQL: select * from think_user_edu where id = '2016303110'  [ RunTime:0.0002s ]
+SQL: select pd from think_login where id ='2016303110'  [ RunTime:0.0001s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='WAIT'  [ RunTime:0.0002s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='YES'  [ RunTime:0.0002s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='NO'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048379s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2018-05-19T18:11:45+08:00 ] ::1 /mksys/index.php/home/home/generalteacheruserinf.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: select * from think_user_info where id = '2016303110'  [ RunTime:0.0007s ]
+SQL: select * from think_user_job where id = '2016303110'  [ RunTime:0.0005s ]
+SQL: select * from think_user_edu where id = '2016303110'  [ RunTime:0.0005s ]
+SQL: select pd from think_login where id ='2016303110'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000672s ]
+
+[ 2018-05-19T18:11:48+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='WAIT'  [ RunTime:0.0004s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='YES'  [ RunTime:0.0004s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='NO'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+
+[ 2018-05-19T18:11:52+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachAchEdit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006241s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000424s ]
+
+[ 2018-05-19T18:12:14+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachAchEdit.html?achName=happy2&achDep=dep1&achTime=2017-05-19&achLv=3&achSup=C%3A%5CUsers%5CAngelLover%5CDocuments%5Chuffman.docx&submit=%E4%BF%9D%E5%AD%98%E5%B9%B6%E6%8F%90%E4%BA%A4%E5%AE%A1%E6%A0%B8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004867s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000487s ]
+
+[ 2018-05-19T18:12:14+08:00 ] ::1 /mksys/index.php/home/home/updateteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: update think_teach_ach set name='happy2',dep='dep1',tm='2017-05-19',lv='3',sup='/Public/support/2016303110/小芳_teachAch_48.docx' where num=48 and years=2018 and ptype='teach_ach'  [ RunTime:0.0575s ]
+SQL:  select status from think_map_status where num=48 and years=2018 and ptype='teach_ach' and id='2016303110'  [ RunTime:0.0003s ]
+
+[ 2018-05-19T18:12:14+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='WAIT'  [ RunTime:0.0004s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='YES'  [ RunTime:0.0003s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='NO'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068762s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000616s ]
+
+[ 2018-05-19T20:59:27+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='WAIT'  [ RunTime:0.0016s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='YES'  [ RunTime:0.0003s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='NO'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125202s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125242s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000852s ]
+
+[ 2018-05-19T21:28:40+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019346s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019415s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+
+[ 2018-05-19T21:29:11+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachAchEdit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006688s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000372s ]
+
+[ 2018-05-19T21:29:19+08:00 ] ::1 /mksys/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041676s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000408s ]
+
+[ 2018-05-19T21:29:38+08:00 ] ::1 /mksys/index.php/home/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+SQL:  select auth from think_login where id = '2016303110' and pd = '123456'  [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant auth - assumed 'auth' D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\IndexController.class.php 第 22 行.
+SQL: select name from think_user_info where id='2016303110'  [ RunTime:0.0003s ]
+
+[ 2018-05-19T21:29:38+08:00 ] ::1 /mksys/index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+SQL: select * from think_user_info where id = '2016303110'  [ RunTime:0.0004s ]
+SQL: select * from think_user_job where id = '2016303110'  [ RunTime:0.0005s ]
+SQL: select * from think_user_edu where id = '2016303110'  [ RunTime:0.0002s ]
+SQL: select pd from think_login where id ='2016303110'  [ RunTime:0.0002s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='WAIT'  [ RunTime:0.0004s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='YES'  [ RunTime:0.0002s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='NO'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022984s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023022s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000584s ]
+
+[ 2018-05-19T21:29:50+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='WAIT'  [ RunTime:0.0005s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='YES'  [ RunTime:0.0003s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='NO'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067336s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067373s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2018-05-19T21:29:53+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='WAIT'  [ RunTime:0.0005s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='YES'  [ RunTime:0.0003s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='NO'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068727s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000529s ]
+
+[ 2018-05-19T21:30:42+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachProEdit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020151s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020238s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2018-05-19T21:31:17+08:00 ] ::1 /mksys/index.php/home/home/updateteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: update think_teach_pro set name='我的世界',tp='3',tm='2018-05-19',fund='455',paid='444',remain='12',sup='/Public/support/2016303110/小芳_teachPro_3.PNG' where num=3 and years=2018 and ptype='teach_pro'  [ RunTime:0.0416s ]
+SQL:  select status from think_map_status where num=3 and years=2018 and ptype='teach_pro' and id='2016303110'  [ RunTime:0.0004s ]
+
+[ 2018-05-19T21:31:17+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachProEdit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006653s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006712s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000778s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000830s ]
+
+[ 2018-05-19T21:31:17+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='WAIT'  [ RunTime:0.0013s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='YES'  [ RunTime:0.0003s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='NO'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081032s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2018-05-19T21:32:47+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachProAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056299s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000409s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000438s ]
+
+[ 2018-05-19T21:33:12+08:00 ] ::1 /mksys/index.php/home/home/insertteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: select timer from think_sys_timer where ptype='teach_pro' and years=2018  [ RunTime:0.0004s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL:  update think_sys_timer set timer=5 where  ptype='teach_pro' and years=2018  [ RunTime:0.0785s ]
+SQL: insert into think_teach_pro values(4,2018,'teach_pro','啥地方','3','2018-05-19','455','444','12','/Public/support/2016303110/小芳_teachPro_4.jpg') [ RunTime:0.0347s ]
+SQL: insert into think_map_status values('2016303110',2018,'teach_pro',4,'WAIT','')  [ RunTime:0.0474s ]
+
+[ 2018-05-19T21:33:12+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachProAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000629s ]
+
+[ 2018-05-19T21:33:13+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='WAIT'  [ RunTime:0.0007s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='YES'  [ RunTime:0.0003s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='NO'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071237s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000735s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000779s ]
+
+[ 2018-05-19T21:51:24+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='WAIT'  [ RunTime:0.0005s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='YES'  [ RunTime:0.0003s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='NO'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071051s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000734s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000804s ]
+
+[ 2018-05-19T21:51:25+08:00 ] ::1 /mksys/index.php/home/home/getteachachwait.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+ERR: 非法操作:getteachachwait
+
+[ 2018-05-19T21:51:30+08:00 ] ::1 /mksys/index.php/home/home/getteachachwait.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+ERR: 非法操作:getteachachwait
+
+[ 2018-05-19T21:51:31+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachAchAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028463s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000510s ]
+
+[ 2018-05-19T21:51:38+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachAchEdit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014121s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014173s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000510s ]
+
+[ 2018-05-19T21:51:47+08:00 ] ::1 /mksys/index.php/home/home/updateteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: update think_teach_ach set name='happ',dep='dep1',tm='2017-05-19',lv='3',sup='/Public/support/2016303110/小芳_teachAch_48.jpg' where num=48 and years=2018 and ptype='teach_ach'  [ RunTime:0.0786s ]
+SQL:  select status from think_map_status where num=48 and years=2018 and ptype='teach_ach' and id='2016303110'  [ RunTime:0.0004s ]
+
+[ 2018-05-19T21:51:47+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachAchEdit.html?achName=happ&achDep=dep1&achTime=2017-05-19&achLv=3&achSup=C%3A%5CUsers%5CAngelLover%5CPictures%5Cps%5Cc83723c5a52a7f29ba255afce6e622f3.jpg&submit=%E4%BF%9D%E5%AD%98%E5%B9%B6%E6%8F%90%E4%BA%A4%E5%AE%A1%E6%A0%B8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000784s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001613s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002418s ]
+
+[ 2018-05-19T21:51:48+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='WAIT'  [ RunTime:0.0004s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='YES'  [ RunTime:0.0002s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='NO'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069044s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2018-05-19T21:51:50+08:00 ] ::1 /mksys/index.php/home/home/getteachachwait.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+ERR: 非法操作:getteachachwait
+
+[ 2018-05-19T21:53:24+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='WAIT'  [ RunTime:0.0006s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='YES'  [ RunTime:0.0004s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='NO'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000457s ]
+
+[ 2018-05-19T21:53:27+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='WAIT'  [ RunTime:0.0009s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='YES'  [ RunTime:0.0005s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='NO'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067556s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000646s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000677s ]
+
+[ 2018-05-19T21:53:30+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='WAIT'  [ RunTime:0.0008s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='YES'  [ RunTime:0.0004s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='NO'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069049s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000645s ]
+
+[ 2018-05-19T22:01:15+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachtbp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000612s ]
+
+[ 2018-05-19T22:30:25+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachtbp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+NOTIC: [8] Undefined variable: teachTbp_YES D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\441fc669d80e2a8fd59aded600892bc6.php 第 298 行.
+NOTIC: [8] Undefined variable: teachTbp_YES D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\441fc669d80e2a8fd59aded600892bc6.php 第 298 行.
+NOTIC: [8] Undefined variable: teachTbp_NO D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\441fc669d80e2a8fd59aded600892bc6.php 第 298 行.
+NOTIC: [8] Undefined variable: teachTbpWAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\441fc669d80e2a8fd59aded600892bc6.php 第 342 行.
+NOTIC: [8] Undefined variable: teachTbpYES D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\441fc669d80e2a8fd59aded600892bc6.php 第 376 行.
+NOTIC: [8] Undefined variable: teachTbpNO D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\441fc669d80e2a8fd59aded600892bc6.php 第 417 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085164s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000780s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000872s ]
+
+[ 2018-05-19T22:30:28+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachtbp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Undefined variable: teachTbp_YES D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\441fc669d80e2a8fd59aded600892bc6.php 第 298 行.
+NOTIC: [8] Undefined variable: teachTbp_YES D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\441fc669d80e2a8fd59aded600892bc6.php 第 298 行.
+NOTIC: [8] Undefined variable: teachTbp_NO D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\441fc669d80e2a8fd59aded600892bc6.php 第 298 行.
+NOTIC: [8] Undefined variable: teachTbpWAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\441fc669d80e2a8fd59aded600892bc6.php 第 342 行.
+NOTIC: [8] Undefined variable: teachTbpYES D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\441fc669d80e2a8fd59aded600892bc6.php 第 376 行.
+NOTIC: [8] Undefined variable: teachTbpNO D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\441fc669d80e2a8fd59aded600892bc6.php 第 417 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068394s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2018-05-19T22:35:10+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachtbp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `think_teach_tbp` [ RunTime:0.1389s ]
+SQL: select * from think_teach_tbp c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_tbp' and c2.status='WAIT'  [ RunTime:0.0313s ]
+SQL: select * from think_teach_tbp c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_tbp' and c2.status='YES'  [ RunTime:0.0009s ]
+SQL: select * from think_teach_tbp c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_tbp' and c2.status='NO'  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084480s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000580s ]
+
+[ 2018-05-19T22:35:25+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachTbpAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015617s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015704s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000879s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000858s ]
+
+[ 2018-05-19T22:35:48+08:00 ] ::1 /mksys/index.php/home/home/insertteachtbp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+NOTIC: [8] Undefined index: tbpSup D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 765 行.
+SQL: select timer from think_sys_timer where ptype='teach_tbp' and years=2018  [ RunTime:0.0007s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: tbpSup D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 787 行.
+NOTIC: [8] Undefined index: tbpSup D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 787 行.
+SQL:  update think_sys_timer set timer=2 where  ptype='teach_tbp' and years=2018  [ RunTime:0.0878s ]
+SQL: insert into think_teach_tbp values(1,2018,'teach_tbp','我的girl','西工大','我','2018-05-19','') [ RunTime:0.0215s ]
+SQL: insert into think_map_status values('2016303110',2018,'teach_tbp',1,'WAIT','')  [ RunTime:0.0369s ]
+
+[ 2018-05-19T22:35:48+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachTbpAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007416s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007485s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000700s ]
+
+[ 2018-05-19T22:35:48+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachtbp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+SQL: select * from think_teach_tbp c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_tbp' and c2.status='WAIT'  [ RunTime:0.0006s ]
+SQL: select * from think_teach_tbp c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_tbp' and c2.status='YES'  [ RunTime:0.0003s ]
+SQL: select * from think_teach_tbp c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_tbp' and c2.status='NO'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070446s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070485s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000748s ]
+
+[ 2018-05-19T22:36:04+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachTbpEdit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016968s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2018-05-19T22:37:25+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachtbp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: select * from think_teach_tbp c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_tbp' and c2.status='WAIT'  [ RunTime:0.0005s ]
+SQL: select * from think_teach_tbp c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_tbp' and c2.status='YES'  [ RunTime:0.0003s ]
+SQL: select * from think_teach_tbp c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_tbp' and c2.status='NO'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072431s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072471s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000657s ]
+
+[ 2018-05-19T22:37:28+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachTbpEdit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011287s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000614s ]
+
+[ 2018-05-19T22:37:33+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachTbpEdit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008990s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2018-05-19T22:38:35+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachtbp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: select * from think_teach_tbp c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_tbp' and c2.status='WAIT'  [ RunTime:0.0004s ]
+SQL: select * from think_teach_tbp c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_tbp' and c2.status='YES'  [ RunTime:0.0002s ]
+SQL: select * from think_teach_tbp c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_tbp' and c2.status='NO'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069951s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069990s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000529s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000592s ]
+
+[ 2018-05-19T22:38:38+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachTbpEdit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006731s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000893s ]
+
+[ 2018-05-19T22:38:46+08:00 ] ::1 /mksys/index.php/home/home/updateteachtbp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+NOTIC: [8] Undefined index: tbpSup D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 524 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: tbpSup D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 544 行.
+NOTIC: [8] Undefined index: tbpSup D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 544 行.
+SQL: update think_teach_tbp set name='我的girl',pub='西工大',signature='我',tm='2018-05-19',sup='' where num=1 and years=2018 and ptype='teach_tbp'  [ RunTime:0.0498s ]
+SQL:  select status from think_map_status where num=1 and years=2018 and ptype='teach_tbp' and id='2016303110'  [ RunTime:0.0003s ]
+
+[ 2018-05-19T22:38:46+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachTbpEdit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005865s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000572s ]
+
+[ 2018-05-19T22:39:01+08:00 ] ::1 /mksys/index.php/home/home/updateteachtbp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+NOTIC: [8] Undefined index: tbpSup D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 524 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: tbpSup D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 544 行.
+NOTIC: [8] Undefined index: tbpSup D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 544 行.
+SQL: update think_teach_tbp set name='我的',pub='西工大',signature='我',tm='2018-05-19',sup='' where num=1 and years=2018 and ptype='teach_tbp'  [ RunTime:0.0412s ]
+SQL:  select status from think_map_status where num=1 and years=2018 and ptype='teach_tbp' and id='2016303110'  [ RunTime:0.0003s ]
+
+[ 2018-05-19T22:39:01+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachTbpEdit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006916s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000700s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000803s ]
+
+[ 2018-05-19T22:39:01+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachtbp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: select * from think_teach_tbp c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_tbp' and c2.status='WAIT'  [ RunTime:0.0004s ]
+SQL: select * from think_teach_tbp c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_tbp' and c2.status='YES'  [ RunTime:0.0005s ]
+SQL: select * from think_teach_tbp c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_tbp' and c2.status='NO'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069249s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069288s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000792s ]
+
+[ 2018-05-19T22:39:21+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachTbpEdit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009075s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2018-05-19T22:39:29+08:00 ] ::1 /mksys/index.php/home/home/updateteachtbp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+NOTIC: [8] Undefined index: tbpSup D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 524 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: tbpSup D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 544 行.
+NOTIC: [8] Undefined index: tbpSup D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 544 行.
+SQL: update think_teach_tbp set name='我的',pub='西工大',signature='我',tm='2018-05-19',sup='' where num=1 and years=2018 and ptype='teach_tbp'  [ RunTime:0.0546s ]
+SQL:  select status from think_map_status where num=1 and years=2018 and ptype='teach_tbp' and id='2016303110'  [ RunTime:0.0003s ]
+
+[ 2018-05-19T22:39:29+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachTbpEdit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008362s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2018-05-19T22:39:39+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachTbpEdit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000950s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000812s ]
+
+[ 2018-05-19T22:39:39+08:00 ] ::1 /mksys/index.php/home/home/updateteachtbp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+NOTIC: [8] Undefined index: tbpSup D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 524 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: tbpSup D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 544 行.
+NOTIC: [8] Undefined index: tbpSup D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 544 行.
+SQL: update think_teach_tbp set name='我的girl',pub='西工大',signature='我',tm='2018-05-19',sup='' where num=1 and years=2018 and ptype='teach_tbp'  [ RunTime:0.0549s ]
+SQL:  select status from think_map_status where num=1 and years=2018 and ptype='teach_tbp' and id='2016303110'  [ RunTime:0.0003s ]
+
+[ 2018-05-19T22:39:39+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachtbp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: select * from think_teach_tbp c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_tbp' and c2.status='WAIT'  [ RunTime:0.0011s ]
+SQL: select * from think_teach_tbp c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_tbp' and c2.status='YES'  [ RunTime:0.0004s ]
+SQL: select * from think_teach_tbp c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_tbp' and c2.status='NO'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071921s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071973s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000642s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000688s ]
+
+[ 2018-05-19T22:39:48+08:00 ] ::1 /mksys/index.php/home/home/deleteteachtbp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001332s ]
+SQL: select sup from think_teach_tbp where num=1 and years=2018 and ptype='teach_tbp'  [ RunTime:0.0004s ]
+SQL: delete from think_teach_tbp where num=1 and years=2018 and ptype='teach_tbp'  [ RunTime:0.0726s ]
+SQL: delete from think_map_status where id='2016303110' and num=1 and years=2018 and ptype='teach_tbp'  [ RunTime:0.0492s ]
+NOTIC: [2] unlink(.): Permission denied D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 931 行.
+
+[ 2018-05-19T22:39:48+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachtbp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: select * from think_teach_tbp c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_tbp' and c2.status='WAIT'  [ RunTime:0.0003s ]
+SQL: select * from think_teach_tbp c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_tbp' and c2.status='YES'  [ RunTime:0.0002s ]
+SQL: select * from think_teach_tbp c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_tbp' and c2.status='NO'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065730s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000451s ]
+
+[ 2018-05-19T22:39:52+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachTbpAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008866s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000951s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001045s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000957s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001021s ]
+
+[ 2018-05-19T22:40:03+08:00 ] ::1 /mksys/index.php/home/home/insertteachtbp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+NOTIC: [8] Undefined index: tbpSup D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 765 行.
+SQL: select timer from think_sys_timer where ptype='teach_tbp' and years=2018  [ RunTime:0.0006s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: tbpSup D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 787 行.
+NOTIC: [8] Undefined index: tbpSup D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 787 行.
+SQL:  update think_sys_timer set timer=3 where  ptype='teach_tbp' and years=2018  [ RunTime:0.5656s ]
+SQL: insert into think_teach_tbp values(2,2018,'teach_tbp','我的girl','西工大','我','2018-05-19','') [ RunTime:0.0400s ]
+SQL: insert into think_map_status values('2016303110',2018,'teach_tbp',2,'WAIT','')  [ RunTime:0.0358s ]
+
+[ 2018-05-19T22:40:03+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachTbpAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007232s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000555s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000601s ]
+
+[ 2018-05-19T22:40:03+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachtbp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: select * from think_teach_tbp c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_tbp' and c2.status='WAIT'  [ RunTime:0.0005s ]
+SQL: select * from think_teach_tbp c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_tbp' and c2.status='YES'  [ RunTime:0.0005s ]
+SQL: select * from think_teach_tbp c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_tbp' and c2.status='NO'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077420s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001103s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001184s ]
+
+[ 2018-05-19T22:41:15+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachtbp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: select * from think_teach_tbp c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_tbp' and c2.status='WAIT'  [ RunTime:0.0005s ]
+SQL: select * from think_teach_tbp c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_tbp' and c2.status='YES'  [ RunTime:0.0004s ]
+SQL: select * from think_teach_tbp c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_tbp' and c2.status='NO'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069480s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000467s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000498s ]
+

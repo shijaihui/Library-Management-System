@@ -1,0 +1,1 @@
+a:8:{i:0;s:2:"id";i:1;s:5:"years";i:2;s:5:"ptype";i:3;s:3:"num";i:4;s:6:"status";i:5;s:6:"reason";s:3:"_pk";a:4:{i:0;s:2:"id";i:1;s:5:"years";i:2;s:5:"ptype";i:3;s:3:"num";}s:5:"_type";a:6:{s:2:"id";s:8:"char(10)";s:5:"years";s:7:"int(11)";s:5:"ptype";s:11:"varchar(15)";s:3:"num";s:7:"int(11)";s:6:"status";s:10:"varchar(4)";s:6:"reason";s:12:"varchar(300)";}}

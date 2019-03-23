@@ -1,0 +1,20 @@
+[ 2018-09-12T22:42:00+08:00 ] 127.0.0.1 /MKSYS/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007888s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001620s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.019748s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.020160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.207407s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.207489s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003789s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003839s ]
+

@@ -1,0 +1,29 @@
+[ 2018-08-03T21:55:53+08:00 ] ::1 /mksys/index.php/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017274s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1520 行.
+
+[ 2018-08-03T21:55:54+08:00 ] ::1 /mksys/index.php/home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.014176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.014283s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.563325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.563430s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.023076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.023182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.048655s ]
+INFO: [ app_end ] --END-- [ RunTime:0.048777s ]
+

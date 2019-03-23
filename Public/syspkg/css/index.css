@@ -1,0 +1,46 @@
+body{
+	background-image: url(../images/background2.jpg);
+}
+.home{
+	width: 700px;
+	height: 600px;
+	margin: 0 auto;
+	opacity:0.8;
+	filter:alpha(opacity=50);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.block{
+	position:  relative;
+	padding-top : 20px;
+	width: 350px;
+	height: 350px;
+	margin: 0 auto;
+	opacity: 0.9	;
+	filter: alpha(opacity=90);
+	
+	border-radius: 20px;
+	background: linear-gradient(to right, rgb(112, 218, 236) , rgb(143, 247, 199));
+}
+.line{
+	width : 200px;
+	height: 60px;
+	margin: 0 auto;
+	text-align: center;
+}
+.btn{
+	position: relative;
+	top: 20px;
+	width: 200px;
+	color: aliceblue;
+	background-color: rgb(12, 0, 2);
+}
+.inp{
+	width:200px;
+	height: 25px; 
+	border: 1.5px solid white;
+
+	border-radius: 10px;
+	background: linear-gradient(to right,rgb(122,228,216),rgb(133,237,209));
+}

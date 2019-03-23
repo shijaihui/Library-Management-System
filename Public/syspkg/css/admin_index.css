@@ -1,0 +1,60 @@
+.body{
+/*    background-image: url(../images/admin_index_background1.jpg);*/
+}
+.home{
+    width: 700px;
+    height: 780px;
+    margin: 0 auto;
+    background-color: rgb(131, 179, 175);
+    opacity:0.8;
+    filter:alpha(opacity=80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.block{
+    padding-top : 20px;
+    width: 50%;
+    height: 250px;
+    margin: 0 auto;
+    background: white;
+    opacity: 70%;
+    position: absolute;
+    z-index: 2;
+}
+.line{
+    width : 200px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+.btn{
+    margin-top: 20px;
+    width: 200px;
+    color: aliceblue;
+    background-color: rgb(12, 0, 2);
+}
+
+.canvasBlock{
+    width: 700px;
+    height: 780px;
+    margin: 0 auto;
+    opacity: 70%;
+    position: absolute;
+    z-index: 1;
+}
+
+canvas {
+    /*display: block;*/
+    width: inherit;
+    height: inherit;
+    /*background: black;*/
+}
+
+.float{
+    position: absolute;
+    margin: 0 auto;
+    display:inline;
+    z-index: 1;
+}

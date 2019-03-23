@@ -1,0 +1,1 @@
+a:5:{i:0;s:5:"ptype";i:1;s:5:"years";i:2;s:5:"timer";s:3:"_pk";a:2:{i:0;s:5:"ptype";i:1;s:5:"years";}s:5:"_type";a:3:{s:5:"ptype";s:11:"varchar(15)";s:5:"years";s:7:"int(11)";s:5:"timer";s:7:"int(11)";}}

@@ -1,0 +1,1 @@
+a:4:{i:0;s:4:"auth";i:1;s:3:"pos";s:3:"_pk";s:3:"pos";s:5:"_type";a:2:{s:4:"auth";s:10:"varchar(9)";s:3:"pos";s:11:"varchar(30)";}}

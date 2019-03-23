@@ -1,0 +1,797 @@
+[ 2018-05-31T00:00:30+08:00 ] ::1 /mksys/index.php/home/admin/superadminuserpd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 572 行.
+SQL: select c1.id,c2.name,c1.dep,c1.pos,c1.title,c1.lv from think_user_job c1,think_user_info c2 where c1.id=c2.id  and ison='YES'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053716s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000754s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2018-05-31T00:00:32+08:00 ] ::1 /mksys/index.php/home/admin/superadminteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_teach_pro c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='teach_pro' and c1.status='WAIT'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051205s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051247s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000824s ]
+
+[ 2018-05-31T00:00:34+08:00 ] ::1 /mksys/index.php/home/admin/superadminresearchpap.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_research_pap c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='research_pap' and c1.status='WAIT'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\ee576a1d489ce60e59a31b133b47a292.php 第 354 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050808s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000720s ]
+
+[ 2018-05-31T00:00:36+08:00 ] ::1 /mksys/index.php/home/admin/superadminotherwel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_other_wel c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='other_wel' and c1.status='WAIT'  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\761bc118f47f07f2f42d5e7c30a18ca5.php 第 354 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.144228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.144265s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2018-05-31T00:00:49+08:00 ] ::1 /mksys/index.php/home/admin/superadminothernews.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_other_news c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='other_news' and c1.status='WAIT'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\22b62f1d081df52b87e17492e9ca1acb.php 第 354 行.
+NOTIC: [8] Undefined variable: otherNews D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\22b62f1d081df52b87e17492e9ca1acb.php 第 397 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051119s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000840s ]
+
+[ 2018-05-31T00:00:50+08:00 ] ::1 /mksys/index.php/home/admin/superadminotherwel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_other_wel c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='other_wel' and c1.status='WAIT'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\761bc118f47f07f2f42d5e7c30a18ca5.php 第 354 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055541s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000686s ]
+
+[ 2018-05-31T00:03:44+08:00 ] ::1 /mksys/index.php/home/admin/superadminotherwel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_other_wel c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='other_wel' and c1.status='WAIT'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\761bc118f47f07f2f42d5e7c30a18ca5.php 第 354 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052460s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052497s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000789s ]
+
+[ 2018-05-31T00:03:45+08:00 ] ::1 /mksys/index.php/home/admin/superadminotherwel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_other_wel c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='other_wel' and c1.status='WAIT'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\761bc118f47f07f2f42d5e7c30a18ca5.php 第 354 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049885s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000814s ]
+
+[ 2018-05-31T00:03:45+08:00 ] ::1 /mksys/index.php/home/admin/superadminotherwel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_other_wel c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='other_wel' and c1.status='WAIT'  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\761bc118f47f07f2f42d5e7c30a18ca5.php 第 354 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057611s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057652s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001336s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001414s ]
+
+[ 2018-05-31T00:03:47+08:00 ] ::1 /mksys/index.php/home/admin/superadminotherexc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001374s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_other_exc c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='other_exc' and c1.status='WAIT'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f977ec6cc7cdb4c7bdc43f7952a97b47.php 第 354 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060408s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000755s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2018-05-31T00:03:50+08:00 ] ::1 /mksys/index.php/home/admin/superadminotherwel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_other_wel c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='other_wel' and c1.status='WAIT'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\761bc118f47f07f2f42d5e7c30a18ca5.php 第 354 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061238s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000941s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001234s ]
+
+[ 2018-05-31T00:03:58+08:00 ] ::1 /mksys/index.php/home/admin/superadminteachtbp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+SQL: select * from think_map_status c1,think_teach_tbp c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='teach_tbp' and c1.status='WAIT' and c1.id in (select id from think_user_job where dep='����ϵ') and c1.id='2016303111'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\4332b084c937eda287fef7311336b098.php 第 354 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052733s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000718s ]
+
+[ 2018-05-31T00:04:03+08:00 ] ::1 /mksys/index.php/home/admin/superadminotherwel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_other_wel c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='other_wel' and c1.status='WAIT'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\761bc118f47f07f2f42d5e7c30a18ca5.php 第 354 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050141s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000755s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000802s ]
+
+[ 2018-05-31T00:04:06+08:00 ] ::1 /mksys/index.php/home/admin/superadminotherwel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_other_wel c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='other_wel' and c1.status='WAIT'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\761bc118f47f07f2f42d5e7c30a18ca5.php 第 354 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000789s ]
+
+[ 2018-05-31T00:04:07+08:00 ] ::1 /mksys/index.php/home/admin/superadminothernews.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_other_news c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='other_news' and c1.status='WAIT'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\22b62f1d081df52b87e17492e9ca1acb.php 第 354 行.
+NOTIC: [8] Undefined variable: otherNews D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\22b62f1d081df52b87e17492e9ca1acb.php 第 397 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052288s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052323s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000749s ]
+
+[ 2018-05-31T00:04:11+08:00 ] ::1 /mksys/index.php/home/admin/superadminotherwel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_other_wel c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='other_wel' and c1.status='WAIT'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\761bc118f47f07f2f42d5e7c30a18ca5.php 第 354 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050804s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050843s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000667s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000721s ]
+
+[ 2018-05-31T00:04:13+08:00 ] ::1 /mksys/index.php/home/admin/superadminotherwel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_other_wel c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='other_wel' and c1.status='WAIT'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\761bc118f47f07f2f42d5e7c30a18ca5.php 第 354 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051336s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000726s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000759s ]
+
+[ 2018-05-31T00:04:16+08:00 ] ::1 /mksys/index.php/home/admin/superadminteachtbp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_teach_tbp c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='teach_tbp' and c1.status='WAIT' and c1.id in (select id from think_user_job where dep='˼�����ν���ϵ')  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\4332b084c937eda287fef7311336b098.php 第 354 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051309s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051347s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000726s ]
+
+[ 2018-05-31T00:07:48+08:00 ] ::1 /mksys/index.php/home/admin/superadminteachtbp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_teach_tbp c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='teach_tbp' and c1.status='WAIT' and c1.id in (select id from think_user_job where dep='˼�����ν���ϵ')  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\4332b084c937eda287fef7311336b098.php 第 354 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077863s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077906s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000809s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000845s ]
+
+[ 2018-05-31T00:07:53+08:00 ] ::1 /mksys/index.php/home/admin/superadminteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_teach_ach c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='teach_ach' and c1.status='WAIT'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102699s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102737s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000806s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000850s ]
+
+[ 2018-05-31T00:07:55+08:00 ] ::1 /mksys/index.php/home/admin/superadminteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_teach_pro c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='teach_pro' and c1.status='WAIT'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058820s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058867s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000696s ]
+
+[ 2018-05-31T00:07:58+08:00 ] ::1 /mksys/index.php/home/admin/superadminteachtbp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_teach_tbp c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='teach_tbp' and c1.status='WAIT'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\4332b084c937eda287fef7311336b098.php 第 354 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000734s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000803s ]
+
+[ 2018-05-31T00:07:59+08:00 ] ::1 /mksys/index.php/home/admin/superadminotherexc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_other_exc c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='other_exc' and c1.status='WAIT'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f977ec6cc7cdb4c7bdc43f7952a97b47.php 第 354 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057713s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000603s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000665s ]
+
+[ 2018-05-31T00:08:00+08:00 ] ::1 /mksys/index.php/home/admin/superadminotherwel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_other_wel c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='other_wel' and c1.status='WAIT'  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\761bc118f47f07f2f42d5e7c30a18ca5.php 第 354 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053963s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000766s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000818s ]
+
+[ 2018-05-31T00:08:02+08:00 ] ::1 /mksys/index.php/home/admin/superadminothernews.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_other_news c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='other_news' and c1.status='WAIT'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\22b62f1d081df52b87e17492e9ca1acb.php 第 354 行.
+NOTIC: [8] Undefined variable: otherNews D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\22b62f1d081df52b87e17492e9ca1acb.php 第 397 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080056s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080097s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000631s ]
+
+[ 2018-05-31T00:08:09+08:00 ] ::1 /mksys/index.php/home/index/quit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000491s ]
+
+[ 2018-05-31T00:08:09+08:00 ] ::1 /mksys/index.php/home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006442s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+
+[ 2018-05-31T00:08:20+08:00 ] ::1 /mksys/index.php/home/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+SQL:  select auth from think_login where id = '2016303116' and pd = '123456'  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant auth - assumed 'auth' D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\IndexController.class.php 第 22 行.
+SQL: select name from think_user_info where id='2016303116'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\IndexController.class.php 第 41 行.
+
+[ 2018-05-31T00:08:21+08:00 ] ::1 /mksys/index.php/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+SQL: select id,pd from think_login where auth='C1_B5'  [ RunTime:0.0003s ]
+SQL: select id,pd from think_login where auth='C2_B5'   [ RunTime:0.0002s ]
+SQL: select id,pd from think_login where auth='D_C3_B5'  [ RunTime:0.0002s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 572 行.
+SQL: select c1.id,c2.name,c1.dep,c1.pos,c1.title,c1.lv from think_user_job c1,think_user_info c2 where c1.id=c2.id  and ison='NO'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043149s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000873s ]
+
+[ 2018-05-31T00:08:27+08:00 ] ::1 /mksys/index.php/home/admin/superadminotherwel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_other_wel c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='other_wel' and c1.status='WAIT'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\761bc118f47f07f2f42d5e7c30a18ca5.php 第 354 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050934s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050971s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000766s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000799s ]
+
+[ 2018-05-31T00:08:33+08:00 ] ::1 /mksys/index.php/home/admin/superadminresearchmpb.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_research_mpb c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='research_mpb' and c1.status='WAIT'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\3b6268bcf1db6fe1813c72a103ae51e3.php 第 354 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050655s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000819s ]
+
+[ 2018-05-31T00:08:36+08:00 ] ::1 /mksys/index.php/home/admin/superadminteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_teach_ach c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='teach_ach' and c1.status='WAIT'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053399s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2018-05-31T00:08:41+08:00 ] ::1 /mksys/index.php/home/index/quit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2018-05-31T00:08:41+08:00 ] ::1 /mksys/index.php/home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000639s ]
+
+[ 2018-05-31T01:07:17+08:00 ] ::1 /mksys/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.084028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.043838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.043943s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.028052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.028106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.372892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.372937s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.047689s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.047728s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.049373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.049418s ]
+
+[ 2018-05-31T01:07:28+08:00 ] ::1 /mksys/index.php/home/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+SQL:  select auth from think_login where id = '2016303117' and pd = '123456'  [ RunTime:0.0477s ]
+NOTIC: [8] Use of undefined constant auth - assumed 'auth' D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\IndexController.class.php 第 22 行.
+SQL: select name from think_user_info where id='2016303117'  [ RunTime:0.0211s ]
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\IndexController.class.php 第 41 行.
+
+[ 2018-05-31T01:07:28+08:00 ] ::1 /mksys/index.php/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+SQL: select id,pd from think_login where auth='C1_B5'  [ RunTime:0.0006s ]
+SQL: select id,pd from think_login where auth='C2_B5'   [ RunTime:0.0002s ]
+SQL: select id,pd from think_login where auth='D_C3_B5'  [ RunTime:0.0002s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 572 行.
+SQL: select c1.id,c2.name,c1.dep,c1.pos,c1.title,c1.lv from think_user_job c1,think_user_info c2 where c1.id=c2.id  and ison='NO'  [ RunTime:0.0212s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.108166s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108249s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000808s ]
+

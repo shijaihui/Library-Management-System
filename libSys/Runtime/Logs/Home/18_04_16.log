@@ -1,0 +1,932 @@
+[ 2018-04-16T11:30:45+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.112830s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.047386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.047510s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001437s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001533s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.264980s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.265065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.048491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.048566s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.029765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.029955s ]
+
+[ 2018-04-16T11:30:58+08:00 ] 127.0.0.1 /index.php/home/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+SQL:  select auth from think_login where id = 2016303110 and pd = 123456  [ RunTime:0.0910s ]
+NOTIC: [8] Use of undefined constant auth - assumed 'auth' D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Home\Controller\IndexController.class.php 第 22 行.
+
+[ 2018-04-16T11:30:58+08:00 ] 127.0.0.1 /index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+SQL: select * from think_user_info where id = 2016303110 [ RunTime:0.0439s ]
+SQL: select * from think_user_job where id = 2016303110 [ RunTime:0.0515s ]
+SQL: select * from think_user_edu where id = 2016303110 [ RunTime:0.0584s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Undefined index: profession D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\e88c1ddfb436e39492e599d16fa3ad8f.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069090s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000629s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000737s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2018-04-16T11:32:14+08:00 ] 127.0.0.1 /index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+SQL: select * from think_user_info where id = 2016303110 [ RunTime:0.0004s ]
+SQL: select * from think_user_job where id = 2016303110 [ RunTime:0.0003s ]
+SQL: select * from think_user_edu where id = 2016303110 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+NOTIC: [8] Undefined index: profession D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\e88c1ddfb436e39492e599d16fa3ad8f.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055464s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000411s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000445s ]
+
+[ 2018-04-16T11:32:48+08:00 ] 127.0.0.1 /index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+SQL: select * from think_user_info where id = 2016303110 [ RunTime:0.0005s ]
+SQL: select * from think_user_job where id = 2016303110 [ RunTime:0.0004s ]
+SQL: select * from think_user_edu where id = 2016303110 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined index: profession D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\e88c1ddfb436e39492e599d16fa3ad8f.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083820s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083892s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000778s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000842s ]
+
+[ 2018-04-16T11:33:12+08:00 ] 127.0.0.1 /index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+SQL: select * from think_user_info where id = 2016303110 [ RunTime:0.0004s ]
+SQL: select * from think_user_job where id = 2016303110 [ RunTime:0.0005s ]
+SQL: select * from think_user_edu where id = 2016303110 [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Undefined index: profession D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\e88c1ddfb436e39492e599d16fa3ad8f.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079134s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079207s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000771s ]
+
+[ 2018-04-16T11:34:14+08:00 ] 127.0.0.1 /index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+SQL: select * from think_user_info where id = 2016303110 [ RunTime:0.0004s ]
+SQL: select * from think_user_job where id = 2016303110 [ RunTime:0.0003s ]
+SQL: select * from think_user_edu where id = 2016303110 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined index: profession D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\e88c1ddfb436e39492e599d16fa3ad8f.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007115s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000468s ]
+
+[ 2018-04-16T11:34:17+08:00 ] 127.0.0.1 /index.php/home/home/changepd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+ERR: 非法操作:changepd
+
+[ 2018-04-16T11:34:21+08:00 ] 127.0.0.1 /index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+SQL: select * from think_user_info where id = 2016303110 [ RunTime:0.0005s ]
+SQL: select * from think_user_job where id = 2016303110 [ RunTime:0.0003s ]
+SQL: select * from think_user_edu where id = 2016303110 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined index: profession D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\e88c1ddfb436e39492e599d16fa3ad8f.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000768s ]
+
+[ 2018-04-16T13:09:48+08:00 ] 127.0.0.1 /index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.066558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.066734s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.042526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.042937s ]
+
+[ 2018-04-16T13:09:54+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.005314s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005411s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.262343s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.262469s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.035366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.035434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000490s ]
+
+[ 2018-04-16T13:10:03+08:00 ] 127.0.0.1 /index.php/home/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL:  select auth from think_login where id = 2016303110 and pd = 123456  [ RunTime:0.0584s ]
+NOTIC: [8] Use of undefined constant auth - assumed 'auth' D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Home\Controller\IndexController.class.php 第 22 行.
+
+[ 2018-04-16T13:10:03+08:00 ] 127.0.0.1 /index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+SQL: select * from think_user_info where id = 2016303110 [ RunTime:0.0008s ]
+SQL: select * from think_user_job where id = 2016303110 [ RunTime:0.0005s ]
+SQL: select * from think_user_edu where id = 2016303110 [ RunTime:0.0005s ]
+SQL: select pd from think_login where id =2016303110 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8] Undefined index: profession D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\e88c1ddfb436e39492e599d16fa3ad8f.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068868s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068964s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001123s ]
+
+[ 2018-04-16T13:10:16+08:00 ] 127.0.0.1 /index.php/home/home/changepd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+SQL: update think_login set pd=456789 where id=2016303110 [ RunTime:0.3763s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+NOTIC: [8] Undefined variable: inf D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\4081936b225651948db2ab3ed971a983.php 第 19 行.
+NOTIC: [8] Undefined variable: inf D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\4081936b225651948db2ab3ed971a983.php 第 20 行.
+NOTIC: [8] Undefined variable: inf D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\4081936b225651948db2ab3ed971a983.php 第 21 行.
+NOTIC: [8] Undefined variable: inf D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\4081936b225651948db2ab3ed971a983.php 第 22 行.
+NOTIC: [8] Undefined variable: inf D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\4081936b225651948db2ab3ed971a983.php 第 23 行.
+NOTIC: [8] Undefined variable: inf D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\4081936b225651948db2ab3ed971a983.php 第 24 行.
+NOTIC: [8] Undefined variable: inf D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\4081936b225651948db2ab3ed971a983.php 第 25 行.
+NOTIC: [8] Undefined variable: inf D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\4081936b225651948db2ab3ed971a983.php 第 26 行.
+NOTIC: [8] Undefined variable: inf D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\4081936b225651948db2ab3ed971a983.php 第 28 行.
+NOTIC: [8] Undefined variable: inf D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\4081936b225651948db2ab3ed971a983.php 第 29 行.
+NOTIC: [8] Undefined variable: inf D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\4081936b225651948db2ab3ed971a983.php 第 30 行.
+NOTIC: [8] Undefined variable: inf D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\4081936b225651948db2ab3ed971a983.php 第 31 行.
+NOTIC: [8] Undefined variable: inf D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\4081936b225651948db2ab3ed971a983.php 第 32 行.
+NOTIC: [8] Undefined variable: inf D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\4081936b225651948db2ab3ed971a983.php 第 33 行.
+NOTIC: [8] Undefined variable: inf D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\4081936b225651948db2ab3ed971a983.php 第 34 行.
+NOTIC: [8] Undefined variable: inf D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\4081936b225651948db2ab3ed971a983.php 第 36 行.
+NOTIC: [8] Undefined variable: inf D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\4081936b225651948db2ab3ed971a983.php 第 37 行.
+NOTIC: [8] Undefined variable: inf D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\4081936b225651948db2ab3ed971a983.php 第 38 行.
+NOTIC: [8] Undefined variable: inf D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\4081936b225651948db2ab3ed971a983.php 第 39 行.
+NOTIC: [8] Undefined variable: inf D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\4081936b225651948db2ab3ed971a983.php 第 40 行.
+NOTIC: [8] Undefined variable: inf D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\4081936b225651948db2ab3ed971a983.php 第 41 行.
+NOTIC: [8] Undefined variable: inf D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\4081936b225651948db2ab3ed971a983.php 第 52 行.
+NOTIC: [8] Undefined variable: inf D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\4081936b225651948db2ab3ed971a983.php 第 54 行.
+NOTIC: [8] Undefined variable: inf D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\4081936b225651948db2ab3ed971a983.php 第 57 行.
+NOTIC: [8] Undefined variable: inf D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\4081936b225651948db2ab3ed971a983.php 第 59 行.
+NOTIC: [8] Undefined variable: inf D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\4081936b225651948db2ab3ed971a983.php 第 62 行.
+NOTIC: [8] Undefined variable: inf D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\4081936b225651948db2ab3ed971a983.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001155s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001267s ]
+
+[ 2018-04-16T13:12:03+08:00 ] 127.0.0.1 /index.php/home/home/changepd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+SQL: update think_login set pd=456789 where id=2016303110 [ RunTime:0.0473s ]
+
+[ 2018-04-16T13:12:03+08:00 ] 127.0.0.1 /index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+SQL: select * from think_user_info where id = 2016303110 [ RunTime:0.0004s ]
+SQL: select * from think_user_job where id = 2016303110 [ RunTime:0.0004s ]
+SQL: select * from think_user_edu where id = 2016303110 [ RunTime:0.0003s ]
+SQL: select pd from think_login where id =2016303110 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined index: profession D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\e88c1ddfb436e39492e599d16fa3ad8f.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010483s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000575s ]
+
+[ 2018-04-16T13:12:18+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000549s ]
+
+[ 2018-04-16T13:12:25+08:00 ] 127.0.0.1 /index.php/home/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+SQL:  select auth from think_login where id = 2016303110 and pd = 123456  [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant auth - assumed 'auth' D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Home\Controller\IndexController.class.php 第 22 行.
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Home\Controller\IndexController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008797s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000772s ]
+
+[ 2018-04-16T13:12:34+08:00 ] 127.0.0.1 /index.php/home/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+SQL:  select auth from think_login where id = 2016303110 and pd = 456789  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant auth - assumed 'auth' D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Home\Controller\IndexController.class.php 第 22 行.
+
+[ 2018-04-16T13:12:34+08:00 ] 127.0.0.1 /index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000698s ]
+SQL: select * from think_user_info where id = 2016303110 [ RunTime:0.0006s ]
+SQL: select * from think_user_job where id = 2016303110 [ RunTime:0.0004s ]
+SQL: select * from think_user_edu where id = 2016303110 [ RunTime:0.0004s ]
+SQL: select pd from think_login where id =2016303110 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Undefined index: profession D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\e88c1ddfb436e39492e599d16fa3ad8f.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010559s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010633s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000955s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001016s ]
+
+[ 2018-04-16T16:17:02+08:00 ] 127.0.0.1 /index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.028717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.032609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.032660s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002004s ]
+
+[ 2018-04-16T16:17:13+08:00 ] 127.0.0.1 /index.php/home/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+SQL:  select auth from think_login where id = 2016303110 and pd = 456789  [ RunTime:0.0483s ]
+NOTIC: [8] Use of undefined constant auth - assumed 'auth' D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Home\Controller\IndexController.class.php 第 22 行.
+
+[ 2018-04-16T16:17:13+08:00 ] 127.0.0.1 /index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+SQL: select * from think_user_info where id = 2016303110 [ RunTime:0.0004s ]
+SQL: select * from think_user_job where id = 2016303110 [ RunTime:0.0003s ]
+SQL: select * from think_user_edu where id = 2016303110 [ RunTime:0.0002s ]
+SQL: select pd from think_login where id =2016303110 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+NOTIC: [8] Undefined index: profession D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\e88c1ddfb436e39492e599d16fa3ad8f.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.156276s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.156312s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.020694s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.020732s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000359s ]
+
+[ 2018-04-16T16:17:35+08:00 ] 127.0.0.1 /index.php/home/home/changetel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+SQL: update think_user_info set tel=15237737605 where id=2016303110 [ RunTime:0.0754s ]
+
+[ 2018-04-16T16:17:35+08:00 ] 127.0.0.1 /index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: select * from think_user_info where id = 2016303110 [ RunTime:0.0004s ]
+SQL: select * from think_user_job where id = 2016303110 [ RunTime:0.0003s ]
+SQL: select * from think_user_edu where id = 2016303110 [ RunTime:0.0003s ]
+SQL: select pd from think_login where id =2016303110 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8] Undefined index: profession D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\e88c1ddfb436e39492e599d16fa3ad8f.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006278s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006309s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2018-04-16T16:17:45+08:00 ] 127.0.0.1 /index.php/home/home/changetel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: update think_user_info set tel=15237737605 where id=2016303110 [ RunTime:0.0593s ]
+
+[ 2018-04-16T16:17:45+08:00 ] 127.0.0.1 /index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+SQL: select * from think_user_info where id = 2016303110 [ RunTime:0.0008s ]
+SQL: select * from think_user_job where id = 2016303110 [ RunTime:0.0002s ]
+SQL: select * from think_user_edu where id = 2016303110 [ RunTime:0.0002s ]
+SQL: select pd from think_login where id =2016303110 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+NOTIC: [8] Undefined index: profession D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\e88c1ddfb436e39492e599d16fa3ad8f.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005505s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005535s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2018-04-16T16:18:26+08:00 ] 127.0.0.1 /index.php/home/home/changepd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000411s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000444s ]
+
+[ 2018-04-16T16:18:51+08:00 ] 127.0.0.1 /index.php/home/home/changepd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+SQL: update think_login set pd=123456 where id=2016303110 [ RunTime:0.0759s ]
+
+[ 2018-04-16T16:18:51+08:00 ] 127.0.0.1 /index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+SQL: select * from think_user_info where id = 2016303110 [ RunTime:0.0005s ]
+SQL: select * from think_user_job where id = 2016303110 [ RunTime:0.0003s ]
+SQL: select * from think_user_edu where id = 2016303110 [ RunTime:0.0002s ]
+SQL: select pd from think_login where id =2016303110 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+NOTIC: [8] Undefined index: profession D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\e88c1ddfb436e39492e599d16fa3ad8f.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005395s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005432s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2018-04-16T16:19:29+08:00 ] 127.0.0.1 /index.php/home/home/changeemail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+ERR: 非法操作:changeemail
+
+[ 2018-04-16T16:25:33+08:00 ] 127.0.0.1 /index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+SQL: select * from think_user_info where id = 2016303110 [ RunTime:0.0006s ]
+SQL: select * from think_user_job where id = 2016303110 [ RunTime:0.0003s ]
+SQL: select * from think_user_edu where id = 2016303110 [ RunTime:0.0002s ]
+SQL: select pd from think_login where id =2016303110 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8] Undefined index: profession D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\e88c1ddfb436e39492e599d16fa3ad8f.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008755s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000452s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2018-04-16T16:25:49+08:00 ] 127.0.0.1 /index.php/home/home/changeemail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@qq.com where id=2016303110' at line 1
+ [ SQL语句 ] : update think_user_info set email=1810465225@qq.com where id=2016303110
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@qq.com where id=2016303110' at line 1
+ [ SQL语句 ] : update think_user_info set email=1810465225@qq.com where id=2016303110
+
+[ 2018-04-16T16:28:40+08:00 ] 127.0.0.1 /index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: select * from think_user_info where id = 2016303110 [ RunTime:0.0006s ]
+SQL: select * from think_user_job where id = 2016303110 [ RunTime:0.0002s ]
+SQL: select * from think_user_edu where id = 2016303110 [ RunTime:0.0002s ]
+SQL: select pd from think_login where id =2016303110 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+NOTIC: [8] Undefined index: profession D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\e88c1ddfb436e39492e599d16fa3ad8f.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000369s ]
+
+[ 2018-04-16T16:28:41+08:00 ] 127.0.0.1 /index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+SQL: select * from think_user_info where id = 2016303110 [ RunTime:0.0009s ]
+SQL: select * from think_user_job where id = 2016303110 [ RunTime:0.0006s ]
+SQL: select * from think_user_edu where id = 2016303110 [ RunTime:0.0005s ]
+SQL: select pd from think_login where id =2016303110 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Undefined index: profession D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\e88c1ddfb436e39492e599d16fa3ad8f.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012264s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012343s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000569s ]
+
+[ 2018-04-16T16:28:46+08:00 ] 127.0.0.1 /index.php/home/home/changeemail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@163.com where id=2016303110' at line 1
+ [ SQL语句 ] : update think_user_info set email=123@163.com where id=2016303110
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@163.com where id=2016303110' at line 1
+ [ SQL语句 ] : update think_user_info set email=123@163.com where id=2016303110
+
+[ 2018-04-16T16:31:06+08:00 ] 127.0.0.1 /index.php/home/home/changeemail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: update think_user_info set email='123@163.com' where id=2016303110 [ RunTime:0.0481s ]
+
+[ 2018-04-16T16:31:06+08:00 ] 127.0.0.1 /index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+SQL: select * from think_user_info where id = 2016303110 [ RunTime:0.0005s ]
+SQL: select * from think_user_job where id = 2016303110 [ RunTime:0.0003s ]
+SQL: select * from think_user_edu where id = 2016303110 [ RunTime:0.0001s ]
+SQL: select pd from think_login where id =2016303110 [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8] Undefined index: profession D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\e88c1ddfb436e39492e599d16fa3ad8f.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000374s ]
+
+[ 2018-04-16T16:31:10+08:00 ] 127.0.0.1 /index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+SQL: select * from think_user_info where id = 2016303110 [ RunTime:0.0003s ]
+SQL: select * from think_user_job where id = 2016303110 [ RunTime:0.0004s ]
+SQL: select * from think_user_edu where id = 2016303110 [ RunTime:0.0003s ]
+SQL: select pd from think_login where id =2016303110 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+NOTIC: [8] Undefined index: profession D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\e88c1ddfb436e39492e599d16fa3ad8f.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2018-04-16T16:31:31+08:00 ] 127.0.0.1 /index.php/home/home/changeemail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+SQL: update think_user_info set email='1810465225@qq.com' where id=2016303110 [ RunTime:0.0892s ]
+
+[ 2018-04-16T16:31:32+08:00 ] 127.0.0.1 /index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+SQL: select * from think_user_info where id = 2016303110 [ RunTime:0.0007s ]
+SQL: select * from think_user_job where id = 2016303110 [ RunTime:0.0003s ]
+SQL: select * from think_user_edu where id = 2016303110 [ RunTime:0.0002s ]
+SQL: select pd from think_login where id =2016303110 [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+NOTIC: [8] Undefined index: profession D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\e88c1ddfb436e39492e599d16fa3ad8f.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000349s ]
+
+[ 2018-04-16T16:35:53+08:00 ] 127.0.0.1 /index.php/home/home/changeemail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+SQL: update think_user_info set email='1810465225@qq.com' where id='2016303110'  [ RunTime:0.1180s ]
+
+[ 2018-04-16T16:35:53+08:00 ] 127.0.0.1 /index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: select * from think_user_info where id = '2016303110'  [ RunTime:0.0008s ]
+SQL: select * from think_user_job where id = '2016303110'  [ RunTime:0.0002s ]
+SQL: select * from think_user_edu where id = '2016303110'  [ RunTime:0.0002s ]
+SQL: select pd from think_login where id ='2016303110'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined index: profession D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\e88c1ddfb436e39492e599d16fa3ad8f.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016041s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000416s ]
+
+[ 2018-04-16T16:35:54+08:00 ] 127.0.0.1 /index.php/home/home/changetel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: update think_user_info set tel='15237737605' where id='2016303110'  [ RunTime:0.0301s ]
+
+[ 2018-04-16T16:35:54+08:00 ] 127.0.0.1 /index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+SQL: select * from think_user_info where id = '2016303110'  [ RunTime:0.0005s ]
+SQL: select * from think_user_job where id = '2016303110'  [ RunTime:0.0002s ]
+SQL: select * from think_user_edu where id = '2016303110'  [ RunTime:0.0002s ]
+SQL: select pd from think_login where id ='2016303110'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+NOTIC: [8] Undefined index: profession D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\e88c1ddfb436e39492e599d16fa3ad8f.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005536s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000390s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000416s ]
+
+[ 2018-04-16T16:35:55+08:00 ] 127.0.0.1 /index.php/home/home/changepd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+SQL: update think_login set pd='123456' where id='2016303110'  [ RunTime:0.0673s ]
+
+[ 2018-04-16T16:35:55+08:00 ] 127.0.0.1 /index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: select * from think_user_info where id = '2016303110'  [ RunTime:0.0005s ]
+SQL: select * from think_user_job where id = '2016303110'  [ RunTime:0.0004s ]
+SQL: select * from think_user_edu where id = '2016303110'  [ RunTime:0.0003s ]
+SQL: select pd from think_login where id ='2016303110'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+NOTIC: [8] Undefined index: profession D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\e88c1ddfb436e39492e599d16fa3ad8f.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006637s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006669s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000475s ]
+
+[ 2018-04-16T16:35:57+08:00 ] 127.0.0.1 /index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+SQL: select * from think_user_info where id = '2016303110'  [ RunTime:0.0003s ]
+SQL: select * from think_user_job where id = '2016303110'  [ RunTime:0.0002s ]
+SQL: select * from think_user_edu where id = '2016303110'  [ RunTime:0.0002s ]
+SQL: select pd from think_login where id ='2016303110'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+NOTIC: [8] Undefined index: profession D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\e88c1ddfb436e39492e599d16fa3ad8f.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005246s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005277s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000410s ]
+
+[ 2018-04-16T16:57:25+08:00 ] 127.0.0.1 /index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+SQL: select * from think_user_info where id = '2016303110'  [ RunTime:0.0004s ]
+SQL: select * from think_user_job where id = '2016303110'  [ RunTime:0.0002s ]
+SQL: select * from think_user_edu where id = '2016303110'  [ RunTime:0.0001s ]
+SQL: select pd from think_login where id ='2016303110'  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Undefined index: profession D:\xammp\htdocs\samanagement\thinkPHPstudy\MKS\Runtime\Cache\Home\e88c1ddfb436e39492e599d16fa3ad8f.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047149s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2018-04-16T19:42:44+08:00 ] 127.0.0.1 /index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.071306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.109160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.109213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.017533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017617s ]
+

@@ -1,0 +1,44 @@
+[ 2018-10-29T18:41:15+08:00 ] ::1 /libSys/index.php?s=/Home/Index/browse.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.009433s ]
+INFO: [ app_init ] --END-- [ RunTime:0.045121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.074668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.074891s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001963s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.291844s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.292007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015922s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016039s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.035461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.035541s ]
+
+[ 2018-10-29T18:41:16+08:00 ] ::1 /libSys/index.php?s=/Home/Index/getNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000167s ]
+SQL: SHOW COLUMNS FROM `lib_notice` [ RunTime:0.0491s ]
+SQL: select * from lib_notice [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000193s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000292s ]
+
+[ 2018-10-29T18:41:16+08:00 ] ::1 /libSys/index.php?s=/Home/Index/isLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000618s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000721s ]
+

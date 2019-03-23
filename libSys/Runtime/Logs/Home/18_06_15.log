@@ -1,0 +1,646 @@
+[ 2018-06-15T21:55:23+08:00 ] ::1 /mksys/index.php/home/admin/superadminuserfind.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.059499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.061431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.061484s ]
+
+[ 2018-06-15T21:55:24+08:00 ] ::1 /mksys/index.php/home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.014950s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015014s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.176539s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.176583s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.025849s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.025888s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008489s ]
+
+[ 2018-06-15T21:55:34+08:00 ] ::1 /mksys/index.php/home/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+SQL:  select auth from think_login where id = '2016303118' and pd = '123456'  [ RunTime:0.0496s ]
+NOTIC: [8] Use of undefined constant auth - assumed 'auth' D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\IndexController.class.php 第 22 行.
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\IndexController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067063s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067109s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+
+[ 2018-06-15T21:55:37+08:00 ] ::1 /mksys/index.php/home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005137s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000435s ]
+
+[ 2018-06-15T21:55:44+08:00 ] ::1 /mksys/index.php/home/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+SQL:  select auth from think_login where id = '2016303117' and pd = '123456'  [ RunTime:0.0229s ]
+NOTIC: [8] Use of undefined constant auth - assumed 'auth' D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\IndexController.class.php 第 22 行.
+SQL: select name from think_user_info where id='2016303117'  [ RunTime:0.0202s ]
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\IndexController.class.php 第 41 行.
+
+[ 2018-06-15T21:55:44+08:00 ] ::1 /mksys/index.php/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+SQL: select id,pd from think_login where auth='C1_B5'  [ RunTime:0.0284s ]
+SQL: select id,pd from think_login where auth='C2_B5'   [ RunTime:0.0003s ]
+SQL: select id,pd from think_login where auth='D_C3_B5'  [ RunTime:0.0003s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 572 行.
+SQL: select c1.id,c2.name,c1.dep,c1.pos,c1.title,c1.lv from think_user_job c1,think_user_info c2 where c1.id=c2.id  and ison='NO'  [ RunTime:0.0397s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075700s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075753s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2018-06-15T22:00:27+08:00 ] ::1 /mksys/index.php/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+SQL: select id,pd from think_login where auth='C1_B5'  [ RunTime:0.0006s ]
+SQL: select id,pd from think_login where auth='C2_B5'   [ RunTime:0.0002s ]
+SQL: select id,pd from think_login where auth='D_C3_B5'  [ RunTime:0.0002s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 572 行.
+SQL: select c1.id,c2.name,c1.dep,c1.pos,c1.title,c1.lv from think_user_job c1,think_user_info c2 where c1.id=c2.id  and ison='NO'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039654s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2018-06-15T22:00:31+08:00 ] ::1 /mksys/index.php/home/admin/superadminotherwel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_other_wel c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='other_wel' and c1.status='WAIT'  [ RunTime:0.0773s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\761bc118f47f07f2f42d5e7c30a18ca5.php 第 354 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.099710s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000450s ]
+
+[ 2018-06-15T22:00:34+08:00 ] ::1 /mksys/index.php/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: select id,pd from think_login where auth='C1_B5'  [ RunTime:0.0003s ]
+SQL: select id,pd from think_login where auth='C2_B5'   [ RunTime:0.0001s ]
+SQL: select id,pd from think_login where auth='D_C3_B5'  [ RunTime:0.0001s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 572 行.
+SQL: select c1.id,c2.name,c1.dep,c1.pos,c1.title,c1.lv from think_user_job c1,think_user_info c2 where c1.id=c2.id  and ison='NO'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042871s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042911s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000456s ]
+
+[ 2018-06-15T22:00:36+08:00 ] ::1 /mksys/index.php/home/admin/superadminotherexc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_other_exc c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='other_exc' and c1.status='WAIT'  [ RunTime:0.0436s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f977ec6cc7cdb4c7bdc43f7952a97b47.php 第 354 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050222s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000415s ]
+
+[ 2018-06-15T22:00:38+08:00 ] ::1 /mksys/index.php/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+SQL: select id,pd from think_login where auth='C1_B5'  [ RunTime:0.0003s ]
+SQL: select id,pd from think_login where auth='C2_B5'   [ RunTime:0.0001s ]
+SQL: select id,pd from think_login where auth='D_C3_B5'  [ RunTime:0.0001s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 572 行.
+SQL: select c1.id,c2.name,c1.dep,c1.pos,c1.title,c1.lv from think_user_job c1,think_user_info c2 where c1.id=c2.id  and ison='NO'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056709s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000377s ]
+
+[ 2018-06-15T22:00:44+08:00 ] ::1 /mksys/index.php/home/admin/superadminotherwel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_other_wel c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='other_wel' and c1.status='WAIT'  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\761bc118f47f07f2f42d5e7c30a18ca5.php 第 354 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056918s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000540s ]
+
+[ 2018-06-15T22:00:46+08:00 ] ::1 /mksys/index.php/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: select id,pd from think_login where auth='C1_B5'  [ RunTime:0.0007s ]
+SQL: select id,pd from think_login where auth='C2_B5'   [ RunTime:0.0003s ]
+SQL: select id,pd from think_login where auth='D_C3_B5'  [ RunTime:0.0002s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 572 行.
+SQL: select c1.id,c2.name,c1.dep,c1.pos,c1.title,c1.lv from think_user_job c1,think_user_info c2 where c1.id=c2.id  and ison='NO'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000538s ]
+
+[ 2018-06-15T22:00:49+08:00 ] ::1 /mksys/index.php/home/admin/superadminothernews.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_other_news c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='other_news' and c1.status='WAIT'  [ RunTime:0.0497s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\22b62f1d081df52b87e17492e9ca1acb.php 第 354 行.
+NOTIC: [8] Undefined variable: otherNews D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\22b62f1d081df52b87e17492e9ca1acb.php 第 397 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067760s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067822s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000375s ]
+
+[ 2018-06-15T22:00:51+08:00 ] ::1 /mksys/index.php/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: select id,pd from think_login where auth='C1_B5'  [ RunTime:0.0005s ]
+SQL: select id,pd from think_login where auth='C2_B5'   [ RunTime:0.0002s ]
+SQL: select id,pd from think_login where auth='D_C3_B5'  [ RunTime:0.0001s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 572 行.
+SQL: select c1.id,c2.name,c1.dep,c1.pos,c1.title,c1.lv from think_user_job c1,think_user_info c2 where c1.id=c2.id  and ison='NO'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000376s ]
+
+[ 2018-06-15T22:01:06+08:00 ] ::1 /mksys/index.php/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+SQL: select id,pd from think_login where auth='C1_B5'  [ RunTime:0.0004s ]
+SQL: select id,pd from think_login where auth='C2_B5'   [ RunTime:0.0002s ]
+SQL: select id,pd from think_login where auth='D_C3_B5'  [ RunTime:0.0002s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 572 行.
+SQL: select c1.id,c2.name,c1.dep,c1.pos,c1.title,c1.lv from think_user_job c1,think_user_info c2 where c1.id=c2.id  and ison='NO'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013343s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000455s ]
+
+[ 2018-06-15T22:01:08+08:00 ] ::1 /mksys/index.php/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+SQL: select id,pd from think_login where auth='C1_B5'  [ RunTime:0.0005s ]
+SQL: select id,pd from think_login where auth='C2_B5'   [ RunTime:0.0003s ]
+SQL: select id,pd from think_login where auth='D_C3_B5'  [ RunTime:0.0003s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 572 行.
+SQL: select c1.id,c2.name,c1.dep,c1.pos,c1.title,c1.lv from think_user_job c1,think_user_info c2 where c1.id=c2.id  and ison='NO'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000407s ]
+
+[ 2018-06-15T22:01:09+08:00 ] ::1 /mksys/index.php/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+SQL: select id,pd from think_login where auth='C1_B5'  [ RunTime:0.0002s ]
+SQL: select id,pd from think_login where auth='C2_B5'   [ RunTime:0.0001s ]
+SQL: select id,pd from think_login where auth='D_C3_B5'  [ RunTime:0.0001s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 572 行.
+SQL: select c1.id,c2.name,c1.dep,c1.pos,c1.title,c1.lv from think_user_job c1,think_user_info c2 where c1.id=c2.id  and ison='NO'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000337s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000368s ]
+
+[ 2018-06-15T22:02:22+08:00 ] ::1 /mksys/index.php/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: select id,pd from think_login where auth='C1_B5'  [ RunTime:0.0003s ]
+SQL: select id,pd from think_login where auth='C2_B5'   [ RunTime:0.0002s ]
+SQL: select id,pd from think_login where auth='D_C3_B5'  [ RunTime:0.0002s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 572 行.
+SQL: select c1.id,c2.name,c1.dep,c1.pos,c1.title,c1.lv from think_user_job c1,think_user_info c2 where c1.id=c2.id  and ison='NO'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037374s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000468s ]
+
+[ 2018-06-15T22:04:09+08:00 ] ::1 /mksys/index.php/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+SQL: select id,pd from think_login where auth='C1_B5'  [ RunTime:0.0005s ]
+SQL: select id,pd from think_login where auth='C2_B5'   [ RunTime:0.0003s ]
+SQL: select id,pd from think_login where auth='D_C3_B5'  [ RunTime:0.0002s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 572 行.
+SQL: select c1.id,c2.name,c1.dep,c1.pos,c1.title,c1.lv from think_user_job c1,think_user_info c2 where c1.id=c2.id  and ison='NO'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2018-06-15T22:04:09+08:00 ] ::1 /mksys/index.php/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+SQL: select id,pd from think_login where auth='C1_B5'  [ RunTime:0.0006s ]
+SQL: select id,pd from think_login where auth='C2_B5'   [ RunTime:0.0002s ]
+SQL: select id,pd from think_login where auth='D_C3_B5'  [ RunTime:0.0002s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 572 行.
+SQL: select c1.id,c2.name,c1.dep,c1.pos,c1.title,c1.lv from think_user_job c1,think_user_info c2 where c1.id=c2.id  and ison='NO'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040818s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000507s ]
+
+[ 2018-06-15T22:04:10+08:00 ] ::1 /mksys/index.php/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+SQL: select id,pd from think_login where auth='C1_B5'  [ RunTime:0.0006s ]
+SQL: select id,pd from think_login where auth='C2_B5'   [ RunTime:0.0004s ]
+SQL: select id,pd from think_login where auth='D_C3_B5'  [ RunTime:0.0002s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 572 行.
+SQL: select c1.id,c2.name,c1.dep,c1.pos,c1.title,c1.lv from think_user_job c1,think_user_info c2 where c1.id=c2.id  and ison='NO'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039408s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000540s ]
+
+[ 2018-06-15T22:06:04+08:00 ] ::1 /mksys/index.php/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: select id,pd from think_login where auth='C1_B5'  [ RunTime:0.0004s ]
+SQL: select id,pd from think_login where auth='C2_B5'   [ RunTime:0.0002s ]
+SQL: select id,pd from think_login where auth='D_C3_B5'  [ RunTime:0.0002s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 572 行.
+SQL: select c1.id,c2.name,c1.dep,c1.pos,c1.title,c1.lv from think_user_job c1,think_user_info c2 where c1.id=c2.id  and ison='NO'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2018-06-15T22:06:46+08:00 ] ::1 /mksys/index.php/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: select id,pd from think_login where auth='C1_B5'  [ RunTime:0.0004s ]
+SQL: select id,pd from think_login where auth='C2_B5'   [ RunTime:0.0002s ]
+SQL: select id,pd from think_login where auth='D_C3_B5'  [ RunTime:0.0002s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 572 行.
+SQL: select c1.id,c2.name,c1.dep,c1.pos,c1.title,c1.lv from think_user_job c1,think_user_info c2 where c1.id=c2.id  and ison='NO'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000623s ]
+
+[ 2018-06-15T22:06:50+08:00 ] ::1 /mksys/index.php/home/admin/superadminotherexc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 615 行.
+SQL: select * from think_map_status c1,think_other_exc c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='other_exc' and c1.status='WAIT'  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f977ec6cc7cdb4c7bdc43f7952a97b47.php 第 354 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059825s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059861s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2018-06-15T22:06:55+08:00 ] ::1 /mksys/index.php/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+SQL: select id,pd from think_login where auth='C1_B5'  [ RunTime:0.0004s ]
+SQL: select id,pd from think_login where auth='C2_B5'   [ RunTime:0.0003s ]
+SQL: select id,pd from think_login where auth='D_C3_B5'  [ RunTime:0.0002s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 572 行.
+SQL: select c1.id,c2.name,c1.dep,c1.pos,c1.title,c1.lv from think_user_job c1,think_user_info c2 where c1.id=c2.id  and ison='NO'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040890s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040926s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000456s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000486s ]
+
+[ 2018-06-15T22:10:07+08:00 ] ::1 /mksys/index.php/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: select id,pd from think_login where auth='C1_B5'  [ RunTime:0.0003s ]
+SQL: select id,pd from think_login where auth='C2_B5'   [ RunTime:0.0001s ]
+SQL: select id,pd from think_login where auth='D_C3_B5'  [ RunTime:0.0001s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 572 行.
+SQL: select c1.id,c2.name,c1.dep,c1.pos,c1.title,c1.lv from think_user_job c1,think_user_info c2 where c1.id=c2.id  and ison='NO'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042161s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000461s ]
+
+[ 2018-06-15T22:10:17+08:00 ] ::1 /mksys/index.php/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+SQL: select id,pd from think_login where auth='C1_B5'  [ RunTime:0.0003s ]
+SQL: select id,pd from think_login where auth='C2_B5'   [ RunTime:0.0002s ]
+SQL: select id,pd from think_login where auth='D_C3_B5'  [ RunTime:0.0002s ]
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 572 行.
+SQL: select c1.id,c2.name,c1.dep,c1.pos,c1.title,c1.lv from think_user_job c1,think_user_info c2 where c1.id=c2.id  and ison='NO'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040725s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000477s ]
+

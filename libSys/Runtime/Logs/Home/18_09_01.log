@@ -1,0 +1,1835 @@
+[ 2018-09-01T23:08:34+08:00 ] ::1 /mksys/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.034164s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.030942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031156s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.010515s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.010568s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.345551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.345642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.021126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.021187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.019386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.019427s ]
+
+[ 2018-09-01T23:09:00+08:00 ] ::1 /mksys/index.php/home/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.030409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.030457s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+SQL:  select auth from think_login where id = '2016303110' and pd = '123456'  [ RunTime:0.1621s ]
+NOTIC: [8] Use of undefined constant auth - assumed 'auth' D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\IndexController.class.php 第 22 行.
+SQL: select name from think_user_info where id='2016303110'  [ RunTime:0.1404s ]
+
+[ 2018-09-01T23:09:01+08:00 ] ::1 /mksys/index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\HomeController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 3493 行.
+SQL: select * from think_user_info where id = '2016303110'  [ RunTime:0.0003s ]
+SQL: select * from think_user_job where id = '2016303110'  [ RunTime:0.0584s ]
+SQL: select * from think_user_edu where id = '2016303110'  [ RunTime:0.3284s ]
+SQL: select pd from think_login where id ='2016303110'  [ RunTime:0.0006s ]
+SQL: select ptype,status from think_map_status where id='2016303110'  [ RunTime:0.1394s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.208932s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.208993s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000548s ]
+
+[ 2018-09-01T23:09:09+08:00 ] ::1 /mksys/index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002721s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\HomeController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 3493 行.
+SQL: select * from think_user_info where id = '2016303110'  [ RunTime:0.0004s ]
+SQL: select * from think_user_job where id = '2016303110'  [ RunTime:0.0003s ]
+SQL: select * from think_user_edu where id = '2016303110'  [ RunTime:0.0002s ]
+SQL: select pd from think_login where id ='2016303110'  [ RunTime:0.0002s ]
+SQL: select ptype,status from think_map_status where id='2016303110' and years='2017'  [ RunTime:0.0119s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000722s ]
+
+[ 2018-09-01T23:09:19+08:00 ] ::1 /mksys/index.php/home/home/generalteacheruserinf.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\HomeController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 3493 行.
+SQL: select * from think_user_info where id = '2016303110'  [ RunTime:0.0004s ]
+SQL: select * from think_user_job where id = '2016303110'  [ RunTime:0.0143s ]
+SQL: select * from think_user_edu where id = '2016303110'  [ RunTime:0.0003s ]
+SQL: select pd from think_login where id ='2016303110'  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.153361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.153412s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2018-09-01T23:09:27+08:00 ] ::1 /mksys/index.php/home/home/generalteachercount.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\HomeController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 3493 行.
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'teach_%'  [ RunTime:0.0368s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_ach'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_tbp'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_pro'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'research_%'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_pap'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_mpb'  [ RunTime:0.0001s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_pro'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_ach'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_fund'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_%'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_exc'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_wel'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_news'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.133693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.133730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000882s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000932s ]
+
+[ 2018-09-01T23:09:30+08:00 ] ::1 /mksys/index.php/home/home/generalteacherclassifysearch.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\HomeController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 3493 行.
+SQL: select auth from think_login where id='2016303110'  [ RunTime:0.0003s ]
+SQL: select c1.*,c2.reason,c3.name as sname from think_teach_ach c1,think_map_status c2,think_user_info c3 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c2.id=c3.id and c2.status='YES' and c3.id in(select id from think_login where auth<='B5_A')  [ RunTime:0.3239s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000327s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000367s ]
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 771 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 771 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 796 行.
+NOTIC: [8] Undefined index: tp D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 798 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 800 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 801 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 802 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 796 行.
+NOTIC: [8] Undefined index: tp D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 798 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 800 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 801 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 802 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 831 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 833 行.
+NOTIC: [8] Undefined index: signature D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 834 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 831 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 833 行.
+NOTIC: [8] Undefined index: signature D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 834 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 870 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 872 行.
+NOTIC: [8] Undefined index: vnum D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 873 行.
+NOTIC: [8] Undefined index: partner D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 874 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 870 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 872 行.
+NOTIC: [8] Undefined index: vnum D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 873 行.
+NOTIC: [8] Undefined index: partner D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 874 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 906 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 908 行.
+NOTIC: [8] Undefined index: partner D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 909 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 906 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 908 行.
+NOTIC: [8] Undefined index: partner D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 909 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 939 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 939 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 981 行.
+NOTIC: [8] Undefined index: source D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 983 行.
+NOTIC: [8] Undefined index: stm D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 984 行.
+NOTIC: [8] Undefined index: deadline D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 985 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 986 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 987 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 988 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 981 行.
+NOTIC: [8] Undefined index: source D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 983 行.
+NOTIC: [8] Undefined index: stm D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 984 行.
+NOTIC: [8] Undefined index: deadline D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 985 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 986 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 987 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 988 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1021 行.
+NOTIC: [8] Undefined index: stm D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1023 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1024 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1025 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1026 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1021 行.
+NOTIC: [8] Undefined index: stm D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1023 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1024 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1025 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1026 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1058 行.
+NOTIC: [8] Undefined index: country D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1059 行.
+NOTIC: [8] Undefined index: tmin D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1060 行.
+NOTIC: [8] Undefined index: place D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1061 行.
+NOTIC: [8] Undefined index: sch D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1062 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1063 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1058 行.
+NOTIC: [8] Undefined index: country D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1059 行.
+NOTIC: [8] Undefined index: tmin D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1060 行.
+NOTIC: [8] Undefined index: place D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1061 行.
+NOTIC: [8] Undefined index: sch D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1062 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1063 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1089 行.
+NOTIC: [8] Undefined index: place D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1091 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1092 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1089 行.
+NOTIC: [8] Undefined index: place D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1091 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1092 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1117 行.
+NOTIC: [8] Undefined index: rep D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1118 行.
+NOTIC: [8] Undefined index: title D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1119 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1120 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1117 行.
+NOTIC: [8] Undefined index: rep D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1118 行.
+NOTIC: [8] Undefined index: title D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1119 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1120 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1152 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1152 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1178 行.
+NOTIC: [8] Undefined index: tp D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1180 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1182 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1183 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1184 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1178 行.
+NOTIC: [8] Undefined index: tp D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1180 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1182 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1183 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1184 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1213 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1215 行.
+NOTIC: [8] Undefined index: signature D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1216 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1213 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1215 行.
+NOTIC: [8] Undefined index: signature D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1216 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1252 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1254 行.
+NOTIC: [8] Undefined index: vnum D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1255 行.
+NOTIC: [8] Undefined index: partner D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1256 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1252 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1254 行.
+NOTIC: [8] Undefined index: vnum D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1255 行.
+NOTIC: [8] Undefined index: partner D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1256 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1287 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1289 行.
+NOTIC: [8] Undefined index: partner D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1290 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1287 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1289 行.
+NOTIC: [8] Undefined index: partner D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1290 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1321 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1321 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1365 行.
+NOTIC: [8] Undefined index: source D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1367 行.
+NOTIC: [8] Undefined index: stm D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1368 行.
+NOTIC: [8] Undefined index: deadline D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1369 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1370 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1371 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1372 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1365 行.
+NOTIC: [8] Undefined index: source D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1367 行.
+NOTIC: [8] Undefined index: stm D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1368 行.
+NOTIC: [8] Undefined index: deadline D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1369 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1370 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1371 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1372 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1405 行.
+NOTIC: [8] Undefined index: stm D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1407 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1408 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1409 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1410 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1405 行.
+NOTIC: [8] Undefined index: stm D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1407 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1408 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1409 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1410 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1442 行.
+NOTIC: [8] Undefined index: country D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1443 行.
+NOTIC: [8] Undefined index: tmin D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1444 行.
+NOTIC: [8] Undefined index: place D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1445 行.
+NOTIC: [8] Undefined index: sch D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1446 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1447 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1442 行.
+NOTIC: [8] Undefined index: country D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1443 行.
+NOTIC: [8] Undefined index: tmin D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1444 行.
+NOTIC: [8] Undefined index: place D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1445 行.
+NOTIC: [8] Undefined index: sch D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1446 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1447 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1473 行.
+NOTIC: [8] Undefined index: place D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1475 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1476 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1473 行.
+NOTIC: [8] Undefined index: place D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1475 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1476 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1502 行.
+NOTIC: [8] Undefined index: rep D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1503 行.
+NOTIC: [8] Undefined index: title D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1504 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1505 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1502 行.
+NOTIC: [8] Undefined index: rep D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1503 行.
+NOTIC: [8] Undefined index: title D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1504 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1505 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1539 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1539 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1570 行.
+NOTIC: [8] Undefined index: tp D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1572 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1574 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1575 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1576 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1570 行.
+NOTIC: [8] Undefined index: tp D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1572 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1574 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1575 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1576 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1608 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1610 行.
+NOTIC: [8] Undefined index: signature D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1611 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1608 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1610 行.
+NOTIC: [8] Undefined index: signature D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1611 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1651 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1653 行.
+NOTIC: [8] Undefined index: vnum D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1654 行.
+NOTIC: [8] Undefined index: partner D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1655 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1651 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1653 行.
+NOTIC: [8] Undefined index: vnum D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1654 行.
+NOTIC: [8] Undefined index: partner D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1655 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1691 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1693 行.
+NOTIC: [8] Undefined index: partner D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1694 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1691 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1693 行.
+NOTIC: [8] Undefined index: partner D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1694 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1728 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1728 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1773 行.
+NOTIC: [8] Undefined index: source D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1775 行.
+NOTIC: [8] Undefined index: stm D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1776 行.
+NOTIC: [8] Undefined index: deadline D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1777 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1778 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1779 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1780 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1773 行.
+NOTIC: [8] Undefined index: source D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1775 行.
+NOTIC: [8] Undefined index: stm D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1776 行.
+NOTIC: [8] Undefined index: deadline D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1777 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1778 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1779 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1780 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1817 行.
+NOTIC: [8] Undefined index: stm D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1819 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1820 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1821 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1822 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1817 行.
+NOTIC: [8] Undefined index: stm D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1819 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1820 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1821 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1822 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1858 行.
+NOTIC: [8] Undefined index: country D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1859 行.
+NOTIC: [8] Undefined index: tmin D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1860 行.
+NOTIC: [8] Undefined index: place D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1861 行.
+NOTIC: [8] Undefined index: sch D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1862 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1863 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1858 行.
+NOTIC: [8] Undefined index: country D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1859 行.
+NOTIC: [8] Undefined index: tmin D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1860 行.
+NOTIC: [8] Undefined index: place D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1861 行.
+NOTIC: [8] Undefined index: sch D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1862 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1863 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1893 行.
+NOTIC: [8] Undefined index: place D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1895 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1896 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1893 行.
+NOTIC: [8] Undefined index: place D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1895 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1896 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1925 行.
+NOTIC: [8] Undefined index: rep D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1926 行.
+NOTIC: [8] Undefined index: title D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1927 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1928 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1925 行.
+NOTIC: [8] Undefined index: rep D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1926 行.
+NOTIC: [8] Undefined index: title D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1927 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f0e639e11ca2319d6f28debc9940a75d.php 第 1928 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.449626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.449662s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000632s ]
+
+[ 2018-09-01T23:09:33+08:00 ] ::1 /mksys/index.php/home/home/generalteacheruserfind.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\HomeController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 3493 行.
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 722 行.
+SQL: select auth from think_login where id='2016303110'  [ RunTime:0.0003s ]
+SQL: select c1.id,count(*) from think_map_status c1,think_login c2 where c1.id=c2.id and c1.ptype like 'teach_%' and status='YES' and c2.auth<='B5_A' group by id  [ RunTime:0.0133s ]
+SQL: select c1.id,count(*) from think_map_status c1,think_login c2 where c1.id=c2.id and c1.ptype like 'research_%' and status='YES' and c2.auth<='B5_A' group by id  [ RunTime:0.0008s ]
+SQL: select c1.id,count(*) from think_map_status c1,think_login c2 where c1.id=c2.id and c1.ptype like 'other_%' and status='YES' and c2.auth<='B5_A' group by id  [ RunTime:0.0005s ]
+SQL: select c1.id,count(*) from think_map_status c1,think_login c2 where c1.id=c2.id and c1.status='YES' and c2.auth<='B5_A' group by id  [ RunTime:0.0004s ]
+SQL: select c1.name,c1.id from think_user_info c1,think_login c2 where c1.id=c2.id and c2.auth<='B5_A' group by id  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 857 行.
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 858 行.
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 857 行.
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 858 行.
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 857 行.
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 858 行.
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 857 行.
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 858 行.
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 857 行.
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 858 行.
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 857 行.
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 858 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097068s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000776s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000822s ]
+
+[ 2018-09-01T23:09:36+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\HomeController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 3493 行.
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='WAIT'  [ RunTime:0.0004s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='YES'  [ RunTime:0.0003s ]
+SQL: select * from think_teach_ach c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_ach' and c2.status='NO'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.121536s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.121576s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000916s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000982s ]
+
+[ 2018-09-01T23:09:38+08:00 ] ::1 /mksys/index.php/home/home/getteachachwait.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\HomeController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 3493 行.
+ERR: 非法操作:getteachachwait
+
+[ 2018-09-01T23:09:40+08:00 ] ::1 /mksys/index.php/home/home/getteachachwait.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\HomeController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 3493 行.
+ERR: 非法操作:getteachachwait
+
+[ 2018-09-01T23:09:44+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachAchAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\HomeController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 3493 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.104918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104976s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000603s ]
+
+[ 2018-09-01T23:09:49+08:00 ] ::1 /mksys/index.php/home/home/insertteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\HomeController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 3493 行.
+NOTIC: [8] Undefined index: achSup D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 2292 行.
+SQL: select timer from think_sys_timer where ptype='teach_ach' and years=2018  [ RunTime:0.0564s ]
+
+[ 2018-09-01T23:09:50+08:00 ] ::1 /mksys/index.php/home/home/generalTeacherTeachAchAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\HomeController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 3493 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004754s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004796s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000402s ]
+
+[ 2018-09-01T23:10:02+08:00 ] ::1 /mksys/index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\HomeController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 3493 行.
+SQL: select * from think_user_info where id = '2016303110'  [ RunTime:0.0003s ]
+SQL: select * from think_user_job where id = '2016303110'  [ RunTime:0.0002s ]
+SQL: select * from think_user_edu where id = '2016303110'  [ RunTime:0.0003s ]
+SQL: select pd from think_login where id ='2016303110'  [ RunTime:0.0007s ]
+SQL: select ptype,status from think_map_status where id='2016303110'  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070379s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070433s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2018-09-01T23:10:07+08:00 ] ::1 /mksys/index.php/home/home/generalteacherteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\HomeController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 3493 行.
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='WAIT'  [ RunTime:0.7252s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='YES'  [ RunTime:0.7013s ]
+SQL: select * from think_teach_pro c1,think_map_status c2 where c1.num=c2.num and c1.ptype=c2.ptype and c2.id='2016303110' and c2.ptype='teach_pro' and c2.status='NO'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.216303s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.216357s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000638s ]
+
+[ 2018-09-01T23:10:07+08:00 ] ::1 /mksys/index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\HomeController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 3493 行.
+SQL: select * from think_user_info where id = '2016303110'  [ RunTime:0.0004s ]
+SQL: select * from think_user_job where id = '2016303110'  [ RunTime:0.0002s ]
+SQL: select * from think_user_edu where id = '2016303110'  [ RunTime:0.0002s ]
+SQL: select pd from think_login where id ='2016303110'  [ RunTime:0.0002s ]
+SQL: select ptype,status from think_map_status where id='2016303110'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067606s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000859s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000928s ]
+
+[ 2018-09-01T23:10:18+08:00 ] ::1 /mksys/index.php/home/index/quit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000804s ]
+
+[ 2018-09-01T23:10:18+08:00 ] ::1 /mksys/index.php/home/home/generalteacher.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\HomeController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\HomeController.class.php 第 3493 行.
+SQL: select * from think_user_info where id = '2016303110'  [ RunTime:0.0003s ]
+SQL: select * from think_user_job where id = '2016303110'  [ RunTime:0.0003s ]
+SQL: select * from think_user_edu where id = '2016303110'  [ RunTime:0.0002s ]
+SQL: select pd from think_login where id ='2016303110'  [ RunTime:0.0001s ]
+SQL: select ptype,status from think_map_status where id='2016303110'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075630s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000578s ]
+
+[ 2018-09-01T23:10:18+08:00 ] ::1 /mksys/index.php/home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009049s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000473s ]
+
+[ 2018-09-01T23:10:28+08:00 ] ::1 /mksys/index.php/home/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+SQL:  select auth from think_login where id = '2016303117' and pd = '123456'  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant auth - assumed 'auth' D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\IndexController.class.php 第 22 行.
+SQL: select name from think_user_info where id='2016303117'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\IndexController.class.php 第 41 行.
+
+[ 2018-09-01T23:10:28+08:00 ] ::1 /mksys/index.php/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1520 行.
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'teach_%'  [ RunTime:0.0003s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_ach'  [ RunTime:0.0003s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_tbp'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_pro'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'research_%'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_pap'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_mpb'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_pro'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_ach'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_fund'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_%'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_exc'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_wel'  [ RunTime:0.0001s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_news'  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.162195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.162239s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000792s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000823s ]
+
+[ 2018-09-01T23:10:37+08:00 ] ::1 /mksys/index.php/home/admin/superadminadminpd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1520 行.
+SQL: select id,pd from think_login where auth='C1_B5'  [ RunTime:0.0003s ]
+SQL: select id,pd from think_login where auth='C2_B5'   [ RunTime:0.0002s ]
+SQL: select id,pd from think_login where auth='D_C3_B5'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083324s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083371s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000956s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001010s ]
+
+[ 2018-09-01T23:10:40+08:00 ] ::1 /mksys/index.php/home/admin/superadminuserpd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1520 行.
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 718 行.
+SQL: select c1.id,c2.name,c1.dep,c1.pos,c1.title,c1.lv from think_user_job c1,think_user_info c2 where c1.id=c2.id  and ison='YES'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.180894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.180934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000560s ]
+
+[ 2018-09-01T23:10:46+08:00 ] ::1 /mksys/index.php/home/admin/superadminothernews.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1520 行.
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 905 行.
+SQL: select * from think_map_status c1,think_other_news c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='other_news' and c1.status='WAIT'  [ RunTime:0.0936s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\22b62f1d081df52b87e17492e9ca1acb.php 第 402 行.
+NOTIC: [8] Undefined variable: otherNews D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\22b62f1d081df52b87e17492e9ca1acb.php 第 445 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116249s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.116297s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000646s ]
+
+[ 2018-09-01T23:10:48+08:00 ] ::1 /mksys/index.php/home/admin/superadminotherwel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1520 行.
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 905 行.
+SQL: select * from think_map_status c1,think_other_wel c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='other_wel' and c1.status='WAIT'  [ RunTime:0.1699s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\761bc118f47f07f2f42d5e7c30a18ca5.php 第 400 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.147722s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.147778s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000612s ]
+
+[ 2018-09-01T23:10:49+08:00 ] ::1 /mksys/index.php/home/admin/superadminotherexc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1520 行.
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 905 行.
+SQL: select * from think_map_status c1,think_other_exc c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='other_exc' and c1.status='WAIT'  [ RunTime:0.0809s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f977ec6cc7cdb4c7bdc43f7952a97b47.php 第 401 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101972s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000543s ]
+
+[ 2018-09-01T23:10:54+08:00 ] ::1 /mksys/index.php/home/admin/superadminteachach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1520 行.
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 905 行.
+SQL: select * from think_map_status c1,think_teach_ach c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='teach_ach' and c1.status='WAIT'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000618s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000646s ]
+
+[ 2018-09-01T23:10:55+08:00 ] ::1 /mksys/index.php/home/admin/superadminteachpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1520 行.
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 905 行.
+SQL: select * from think_map_status c1,think_teach_pro c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='teach_pro' and c1.status='WAIT'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.174530s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.174571s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2018-09-01T23:10:56+08:00 ] ::1 /mksys/index.php/home/admin/superadminteachtbp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1520 行.
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 905 行.
+SQL: select * from think_map_status c1,think_teach_tbp c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='teach_tbp' and c1.status='WAIT'  [ RunTime:0.0623s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\4332b084c937eda287fef7311336b098.php 第 419 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2018-09-01T23:10:58+08:00 ] ::1 /mksys/index.php/home/admin/superadminresearchpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1520 行.
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 905 行.
+SQL: select * from think_map_status c1,think_research_pro c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='research_pro' and c1.status='WAIT'  [ RunTime:0.0400s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\b2e5964d49726c27d93e04a51ab2f6aa.php 第 401 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.192732s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.192777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000600s ]
+
+[ 2018-09-01T23:10:59+08:00 ] ::1 /mksys/index.php/home/admin/superadminresearchach.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1520 行.
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 905 行.
+SQL: select * from think_map_status c1,think_research_ach c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='research_ach' and c1.status='WAIT'  [ RunTime:0.0240s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\bb47477e743f94cb4f5f7eb727855db2.php 第 400 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079272s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2018-09-01T23:11:00+08:00 ] ::1 /mksys/index.php/home/admin/superadminresearchpap.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001076s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1520 行.
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 905 行.
+SQL: select * from think_map_status c1,think_research_pap c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='research_pap' and c1.status='WAIT'  [ RunTime:0.0426s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\ee576a1d489ce60e59a31b133b47a292.php 第 401 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.239050s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.239092s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000520s ]
+
+[ 2018-09-01T23:11:02+08:00 ] ::1 /mksys/index.php/home/admin/superadminresearchmpb.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1520 行.
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 905 行.
+SQL: select * from think_map_status c1,think_research_mpb c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='research_mpb' and c1.status='WAIT'  [ RunTime:0.1407s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\3b6268bcf1db6fe1813c72a103ae51e3.php 第 400 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000448s ]
+
+[ 2018-09-01T23:11:06+08:00 ] ::1 /mksys/index.php/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1520 行.
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'teach_%'  [ RunTime:0.0003s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_ach'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_tbp'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_pro'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'research_%'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_pap'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_mpb'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_pro'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_ach'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_fund'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_%'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_exc'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_wel'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_news'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059724s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000575s ]
+
+[ 2018-09-01T23:11:08+08:00 ] ::1 /mksys/index.php/home/admin/superadminclassifysearch.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1520 行.
+SQL: select c1.*,c2.reason,c3.name as sname from think_teach_ach c1,think_map_status c2,think_user_info c3 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c2.id=c3.id and c2.status='YES'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000336s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000408s ]
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 767 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 767 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 792 行.
+NOTIC: [8] Undefined index: tp D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 794 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 796 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 797 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 798 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 792 行.
+NOTIC: [8] Undefined index: tp D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 794 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 796 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 797 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 798 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 827 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 829 行.
+NOTIC: [8] Undefined index: signature D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 830 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 827 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 829 行.
+NOTIC: [8] Undefined index: signature D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 830 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 866 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 868 行.
+NOTIC: [8] Undefined index: vnum D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 869 行.
+NOTIC: [8] Undefined index: partner D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 870 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 866 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 868 行.
+NOTIC: [8] Undefined index: vnum D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 869 行.
+NOTIC: [8] Undefined index: partner D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 870 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 902 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 904 行.
+NOTIC: [8] Undefined index: partner D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 905 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 902 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 904 行.
+NOTIC: [8] Undefined index: partner D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 905 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 935 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 935 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 977 行.
+NOTIC: [8] Undefined index: source D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 979 行.
+NOTIC: [8] Undefined index: stm D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 980 行.
+NOTIC: [8] Undefined index: deadline D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 981 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 982 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 983 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 984 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 977 行.
+NOTIC: [8] Undefined index: source D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 979 行.
+NOTIC: [8] Undefined index: stm D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 980 行.
+NOTIC: [8] Undefined index: deadline D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 981 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 982 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 983 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 984 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1017 行.
+NOTIC: [8] Undefined index: stm D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1019 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1020 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1021 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1022 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1017 行.
+NOTIC: [8] Undefined index: stm D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1019 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1020 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1021 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1022 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1054 行.
+NOTIC: [8] Undefined index: country D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1055 行.
+NOTIC: [8] Undefined index: tmin D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1056 行.
+NOTIC: [8] Undefined index: place D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1057 行.
+NOTIC: [8] Undefined index: sch D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1058 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1059 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1054 行.
+NOTIC: [8] Undefined index: country D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1055 行.
+NOTIC: [8] Undefined index: tmin D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1056 行.
+NOTIC: [8] Undefined index: place D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1057 行.
+NOTIC: [8] Undefined index: sch D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1058 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1059 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1085 行.
+NOTIC: [8] Undefined index: place D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1087 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1088 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1085 行.
+NOTIC: [8] Undefined index: place D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1087 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1088 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1113 行.
+NOTIC: [8] Undefined index: rep D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1114 行.
+NOTIC: [8] Undefined index: title D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1115 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1116 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1113 行.
+NOTIC: [8] Undefined index: rep D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1114 行.
+NOTIC: [8] Undefined index: title D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1115 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1116 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1148 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1148 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1174 行.
+NOTIC: [8] Undefined index: tp D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1176 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1178 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1179 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1180 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1174 行.
+NOTIC: [8] Undefined index: tp D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1176 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1178 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1179 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1180 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1209 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1211 行.
+NOTIC: [8] Undefined index: signature D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1212 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1209 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1211 行.
+NOTIC: [8] Undefined index: signature D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1212 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1248 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1250 行.
+NOTIC: [8] Undefined index: vnum D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1251 行.
+NOTIC: [8] Undefined index: partner D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1252 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1248 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1250 行.
+NOTIC: [8] Undefined index: vnum D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1251 行.
+NOTIC: [8] Undefined index: partner D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1252 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1283 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1285 行.
+NOTIC: [8] Undefined index: partner D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1286 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1283 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1285 行.
+NOTIC: [8] Undefined index: partner D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1286 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1317 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1317 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1361 行.
+NOTIC: [8] Undefined index: source D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1363 行.
+NOTIC: [8] Undefined index: stm D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1364 行.
+NOTIC: [8] Undefined index: deadline D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1365 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1366 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1367 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1368 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1361 行.
+NOTIC: [8] Undefined index: source D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1363 行.
+NOTIC: [8] Undefined index: stm D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1364 行.
+NOTIC: [8] Undefined index: deadline D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1365 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1366 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1367 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1368 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1401 行.
+NOTIC: [8] Undefined index: stm D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1403 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1404 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1405 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1406 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1401 行.
+NOTIC: [8] Undefined index: stm D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1403 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1404 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1405 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1406 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1438 行.
+NOTIC: [8] Undefined index: country D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1439 行.
+NOTIC: [8] Undefined index: tmin D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1440 行.
+NOTIC: [8] Undefined index: place D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1441 行.
+NOTIC: [8] Undefined index: sch D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1442 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1443 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1438 行.
+NOTIC: [8] Undefined index: country D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1439 行.
+NOTIC: [8] Undefined index: tmin D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1440 行.
+NOTIC: [8] Undefined index: place D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1441 行.
+NOTIC: [8] Undefined index: sch D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1442 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1443 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1469 行.
+NOTIC: [8] Undefined index: place D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1471 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1472 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1469 行.
+NOTIC: [8] Undefined index: place D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1471 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1472 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1498 行.
+NOTIC: [8] Undefined index: rep D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1499 行.
+NOTIC: [8] Undefined index: title D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1500 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1501 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1498 行.
+NOTIC: [8] Undefined index: rep D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1499 行.
+NOTIC: [8] Undefined index: title D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1500 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1501 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1535 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1535 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1566 行.
+NOTIC: [8] Undefined index: tp D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1568 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1570 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1571 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1572 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1566 行.
+NOTIC: [8] Undefined index: tp D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1568 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1570 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1571 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1572 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1604 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1606 行.
+NOTIC: [8] Undefined index: signature D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1607 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1604 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1606 行.
+NOTIC: [8] Undefined index: signature D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1607 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1647 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1649 行.
+NOTIC: [8] Undefined index: vnum D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1650 行.
+NOTIC: [8] Undefined index: partner D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1651 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1647 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1649 行.
+NOTIC: [8] Undefined index: vnum D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1650 行.
+NOTIC: [8] Undefined index: partner D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1651 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1687 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1689 行.
+NOTIC: [8] Undefined index: partner D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1690 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1687 行.
+NOTIC: [8] Undefined index: pub D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1689 行.
+NOTIC: [8] Undefined index: partner D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1690 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1724 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1724 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1769 行.
+NOTIC: [8] Undefined index: source D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1771 行.
+NOTIC: [8] Undefined index: stm D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1772 行.
+NOTIC: [8] Undefined index: deadline D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1773 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1774 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1775 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1776 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1769 行.
+NOTIC: [8] Undefined index: source D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1771 行.
+NOTIC: [8] Undefined index: stm D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1772 行.
+NOTIC: [8] Undefined index: deadline D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1773 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1774 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1775 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1776 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1813 行.
+NOTIC: [8] Undefined index: stm D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1815 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1816 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1817 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1818 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1813 行.
+NOTIC: [8] Undefined index: stm D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1815 行.
+NOTIC: [8] Undefined index: fund D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1816 行.
+NOTIC: [8] Undefined index: paid D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1817 行.
+NOTIC: [8] Undefined index: remain D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1818 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1854 行.
+NOTIC: [8] Undefined index: country D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1855 行.
+NOTIC: [8] Undefined index: tmin D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1856 行.
+NOTIC: [8] Undefined index: place D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1857 行.
+NOTIC: [8] Undefined index: sch D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1858 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1859 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1854 行.
+NOTIC: [8] Undefined index: country D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1855 行.
+NOTIC: [8] Undefined index: tmin D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1856 行.
+NOTIC: [8] Undefined index: place D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1857 行.
+NOTIC: [8] Undefined index: sch D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1858 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1859 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1889 行.
+NOTIC: [8] Undefined index: place D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1891 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1892 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1889 行.
+NOTIC: [8] Undefined index: place D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1891 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1892 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1921 行.
+NOTIC: [8] Undefined index: rep D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1922 行.
+NOTIC: [8] Undefined index: title D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1923 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1924 行.
+NOTIC: [8] Undefined index: id D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1921 行.
+NOTIC: [8] Undefined index: rep D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1922 行.
+NOTIC: [8] Undefined index: title D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1923 行.
+NOTIC: [8] Undefined index: content D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\9c568b48ec4a77febea2dd41ac6298ea.php 第 1924 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.424003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.424038s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000654s ]
+
+[ 2018-09-01T23:11:09+08:00 ] ::1 /mksys/index.php/home/admin/superadminuserfind.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1520 行.
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 953 行.
+SQL: select id,count(*) from think_map_status where ptype like 'teach_%' and status='YES' group by id  [ RunTime:0.0003s ]
+SQL: select id,count(*) from think_map_status where ptype like 'research_%' and status='YES' group by id  [ RunTime:0.0002s ]
+SQL: select id,count(*) from think_map_status where ptype like 'other_%' and status='YES' group by id  [ RunTime:0.0002s ]
+SQL: select id,count(*) from think_map_status where status='YES' group by id  [ RunTime:0.0002s ]
+SQL: select name,id from think_user_info  group by id  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1082 行.
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1083 行.
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1082 行.
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1083 行.
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1082 行.
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1083 行.
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1082 行.
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1083 行.
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1082 行.
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1083 行.
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1082 行.
+NOTIC: [8] Undefined offset: 0 D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1083 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2018-09-01T23:11:12+08:00 ] ::1 /mksys/index.php/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1520 行.
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'teach_%'  [ RunTime:0.0003s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_ach'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_tbp'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_pro'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'research_%'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_pap'  [ RunTime:0.0003s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_mpb'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_pro'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_ach'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_fund'  [ RunTime:0.0003s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_%'  [ RunTime:0.0004s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_exc'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_wel'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_news'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059783s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059821s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000639s ]
+
+[ 2018-09-01T23:11:18+08:00 ] ::1 /mksys/index.php/home/admin/superadminresearchpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1520 行.
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 905 行.
+SQL: select * from think_map_status c1,think_research_pro c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='research_pro' and c1.status='WAIT'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\b2e5964d49726c27d93e04a51ab2f6aa.php 第 401 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077484s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077526s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000625s ]
+
+[ 2018-09-01T23:11:20+08:00 ] ::1 /mksys/index.php/home/admin/superadminotherexc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000867s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1520 行.
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 905 行.
+SQL: select * from think_map_status c1,think_other_exc c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='other_exc' and c1.status='WAIT'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\f977ec6cc7cdb4c7bdc43f7952a97b47.php 第 401 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067719s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067755s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001408s ]
+
+[ 2018-09-01T23:11:21+08:00 ] ::1 /mksys/index.php/home/admin/superadminotherwel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1520 行.
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 905 行.
+SQL: select * from think_map_status c1,think_other_wel c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='other_wel' and c1.status='WAIT'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\761bc118f47f07f2f42d5e7c30a18ca5.php 第 400 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000766s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000834s ]
+
+[ 2018-09-01T23:11:22+08:00 ] ::1 /mksys/index.php/home/admin/superadminothernews.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1520 行.
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 905 行.
+SQL: select * from think_map_status c1,think_other_news c2 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c1.ptype='other_news' and c1.status='WAIT'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined variable: teachPro_WAIT D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\22b62f1d081df52b87e17492e9ca1acb.php 第 402 行.
+NOTIC: [8] Undefined variable: otherNews D:\xammp\htdocs\samanagement\MKSYS\MKS\Runtime\Cache\Home\22b62f1d081df52b87e17492e9ca1acb.php 第 445 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079244s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000702s ]
+
+[ 2018-09-01T23:11:22+08:00 ] ::1 /mksys/index.php/home/admin/superadminuserpd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1520 行.
+NOTIC: [8192] Function eregi() is deprecated D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 718 行.
+SQL: select c1.id,c2.name,c1.dep,c1.pos,c1.title,c1.lv from think_user_job c1,think_user_info c2 where c1.id=c2.id  and ison='YES'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072323s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000736s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000780s ]
+
+[ 2018-09-01T23:11:23+08:00 ] ::1 /mksys/index.php/home/admin/superadminadminpd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1520 行.
+SQL: select id,pd from think_login where auth='C1_B5'  [ RunTime:0.0003s ]
+SQL: select id,pd from think_login where auth='C2_B5'   [ RunTime:0.0002s ]
+SQL: select id,pd from think_login where auth='D_C3_B5'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065398s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065435s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000772s ]
+
+[ 2018-09-01T23:11:26+08:00 ] ::1 /mksys/index.php/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1520 行.
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'teach_%'  [ RunTime:0.0004s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_ach'  [ RunTime:0.0003s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_tbp'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_pro'  [ RunTime:0.0003s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'research_%'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_pap'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_mpb'  [ RunTime:0.0001s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_pro'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_ach'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_fund'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_%'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_exc'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_wel'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_news'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061305s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061341s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002559s ]
+
+[ 2018-09-01T23:11:35+08:00 ] ::1 /mksys/index.php/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1520 行.
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'teach_%'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_ach'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_tbp'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_pro'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'research_%'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_pap'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_mpb'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_pro'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_ach'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_fund'  [ RunTime:0.0001s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_%'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_exc'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_wel'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_news'  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058044s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000734s ]
+
+[ 2018-09-01T23:11:41+08:00 ] ::1 /mksys/index.php/home/index/quit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000486s ]
+
+[ 2018-09-01T23:11:41+08:00 ] ::1 /mksys/index.php/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\xammp\htdocs\samanagement\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1520 行.
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'teach_%'  [ RunTime:0.0003s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_ach'  [ RunTime:0.0004s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_tbp'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_pro'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'research_%'  [ RunTime:0.0004s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_pap'  [ RunTime:0.0004s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_mpb'  [ RunTime:0.0004s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_pro'  [ RunTime:0.0003s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_ach'  [ RunTime:0.0004s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_fund'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_%'  [ RunTime:0.0001s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_exc'  [ RunTime:0.0001s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_wel'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_news'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081486s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081526s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000732s ]
+
+[ 2018-09-01T23:11:41+08:00 ] ::1 /mksys/index.php/home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006925s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000483s ]
+
+[ 2018-09-01T23:12:40+08:00 ] ::1 /mksys/index.php/home/index/forgetpd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2018-09-01T23:12:54+08:00 ] ::1 /mksys/index.php/home/index/changepd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.121404s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.121483s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000341s ]
+
+[ 2018-09-01T23:12:59+08:00 ] ::1 /mksys/index.php/home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013705s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000519s ]
+
+[ 2018-09-01T23:13:03+08:00 ] ::1 /mksys/index.php/home/index/forgetpd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000256s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000531s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007357s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000468s ]
+
+[ 2018-09-01T23:13:04+08:00 ] ::1 /mksys/index.php/home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\xammp\htdocs\samanagement\MKSYS\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004916s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004948s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000467s ]
+

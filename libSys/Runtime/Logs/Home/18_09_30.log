@@ -1,0 +1,473 @@
+[ 2018-09-30T09:47:29+08:00 ] 127.0.0.1 /MKSYS/home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.124039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.072771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.072901s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.120133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.120239s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.684193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.684282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.032997s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.033034s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021149s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021190s ]
+
+[ 2018-09-30T09:47:44+08:00 ] 127.0.0.1 /mksys/index.php?s=/home/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000268s ]
+SQL:  select auth from think_login where id = '2016303117' and pd = '123456'  [ RunTime:0.4200s ]
+NOTIC: [8] Use of undefined constant auth - assumed 'auth' D:\Nginx+PHP+Mysql\nginx\html\MKSYS\MKS\Home\Controller\IndexController.class.php 第 24 行.
+SQL: select name from think_user_info where id='2016303117'  [ RunTime:0.0872s ]
+NOTIC: [8] Undefined offset: 0 D:\Nginx+PHP+Mysql\nginx\html\MKSYS\MKS\Home\Controller\IndexController.class.php 第 43 行.
+
+[ 2018-09-30T09:47:44+08:00 ] 127.0.0.1 /mksys/index.php?s=/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\Nginx+PHP+Mysql\nginx\html\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1681 行.
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'teach_%'  [ RunTime:0.1940s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_ach'  [ RunTime:0.0003s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_tbp'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_pro'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'research_%'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_pap'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_mpb'  [ RunTime:0.0003s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_pro'  [ RunTime:0.0003s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_ach'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_fund'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_%'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_exc'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_wel'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_news'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.217971s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.218041s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000577s ]
+
+[ 2018-09-30T09:48:06+08:00 ] 127.0.0.1 /mksys/index.php?s=/home/admin/superadminclassifysearch.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\Nginx+PHP+Mysql\nginx\html\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1681 行.
+SQL: select c1.*,c2.reason,c3.name as sname from think_teach_ach c1,think_map_status c2,think_user_info c3 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c2.id=c3.id and c2.status='YES'  [ RunTime:0.4845s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000330s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000363s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.361381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.361431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000494s ]
+
+[ 2018-09-30T09:48:09+08:00 ] 127.0.0.1 /mksys/index.php?s=/home/admin/excelclassify/years/%E6%97%B6%E9%97%B4%E4%B8%8D%E9%99%90/dep/%E6%89%80%E6%9C%89%E7%B3%BB/status/%E5%B7%B2%E9%80%9A%E8%BF%87/ptype/%E6%95%99%E5%AD%A6%E6%88%90%E6%9E%9C%E5%A5%96.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\Nginx+PHP+Mysql\nginx\html\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1681 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000524s ]
+
+[ 2018-09-30T10:14:52+08:00 ] 127.0.0.1 /mksys/index.php?s=/home/admin/superadminclassifysearch.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\Nginx+PHP+Mysql\nginx\html\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1805 行.
+SQL: select c1.*,c2.reason,c3.name as sname from think_teach_ach c1,think_map_status c2,think_user_info c3 where c1.num=c2.num and c1.years=c2.years and c1.ptype=c2.ptype and c2.id=c3.id and c2.status='YES'  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000473s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000515s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.242380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.242425s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000446s ]
+
+[ 2018-09-30T10:14:54+08:00 ] 127.0.0.1 /mksys/index.php?s=/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\Nginx+PHP+Mysql\nginx\html\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1805 行.
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'teach_%'  [ RunTime:0.0010s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_ach'  [ RunTime:0.0003s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_tbp'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_pro'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'research_%'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_pap'  [ RunTime:0.0001s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_mpb'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_pro'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_ach'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_fund'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_%'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_exc'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_wel'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_news'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2018-09-30T10:14:59+08:00 ] 127.0.0.1 /mksys/index.php?s=/home/admin/exceltotal/years/%E6%97%B6%E9%97%B4%E4%B8%8D%E9%99%90/dep/%E6%89%80%E6%9C%89%E7%B3%BB.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\Nginx+PHP+Mysql\nginx\html\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1805 行.
+SQL: select a.name,b.dep,
+	         count(c.ptype='teach_ach' or null) as teachach,
+	         count(c.ptype='teach_pro' or null) as teachpro,
+	         count(c.ptype='teach_tbp' or null) as teachtbp,
+	         count(c.ptype='research_pap' or null) as researchpap,
+	         count(c.ptype='research_mpb' or null) as researchmpb,
+	         count(c.ptype='research_ach' or null) as researchach,
+	         count(c.ptype='research_pro' or null) as researchpro,
+	         count(c.ptype='research_fund' or null)as researchfund,
+	         count(c.ptype='other_news' or null) as othernews,
+	         count(c.ptype='other_wel' or null) as otherwel,
+	         count(c.ptype='other_exc' or null) as otherexc,
+	         count(*) 
+	         from think_user_info a,think_user_job b,think_map_status c where a.id=b.id and a.id=c.id   group by c.id  [ RunTime:0.1171s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000634s ]
+
+[ 2018-09-30T10:22:00+08:00 ] 127.0.0.1 /mksys/index.php?s=/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\Nginx+PHP+Mysql\nginx\html\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1794 行.
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'teach_%'  [ RunTime:0.0009s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_ach'  [ RunTime:0.0001s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_tbp'  [ RunTime:0.0001s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_pro'  [ RunTime:0.0001s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'research_%'  [ RunTime:0.0001s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_pap'  [ RunTime:0.0001s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_mpb'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_pro'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_ach'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_fund'  [ RunTime:0.0001s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_%'  [ RunTime:0.0001s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_exc'  [ RunTime:0.0001s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_wel'  [ RunTime:0.0001s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_news'  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.117618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117687s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003075s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003338s ]
+
+[ 2018-09-30T10:22:03+08:00 ] 127.0.0.1 /mksys/index.php?s=/home/admin/exceltotal/years/%E6%97%B6%E9%97%B4%E4%B8%8D%E9%99%90/dep/%E6%89%80%E6%9C%89%E7%B3%BB.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\Nginx+PHP+Mysql\nginx\html\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1794 行.
+SQL: select a.name,b.dep,
+	         count(c.ptype='teach_ach' or null) as teachach,
+	         count(c.ptype='teach_pro' or null) as teachpro,
+	         count(c.ptype='teach_tbp' or null) as teachtbp,
+	         count(c.ptype='research_pap' or null) as researchpap,
+	         count(c.ptype='research_mpb' or null) as researchmpb,
+	         count(c.ptype='research_ach' or null) as researchach,
+	         count(c.ptype='research_pro' or null) as researchpro,
+	         count(c.ptype='research_fund' or null)as researchfund,
+	         count(c.ptype='other_news' or null) as othernews,
+	         count(c.ptype='other_wel' or null) as otherwel,
+	         count(c.ptype='other_exc' or null) as otherexc,
+	         count(*) 
+	         from think_user_info a,think_user_job b,think_map_status c where a.id=b.id and a.id=c.id   group by c.id  [ RunTime:0.0025s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000574s ]
+
+[ 2018-09-30T10:29:35+08:00 ] 127.0.0.1 /mksys/index.php?s=/home/admin/exceltotal/years/%E6%97%B6%E9%97%B4%E4%B8%8D%E9%99%90/dep/%E6%89%80%E6%9C%89%E7%B3%BB.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\Nginx+PHP+Mysql\nginx\html\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1666 行.
+SQL: select a.name,b.dep,
+	         count(c.ptype='teach_ach' or null) as teachach,
+	         count(c.ptype='teach_pro' or null) as teachpro,
+	         count(c.ptype='teach_tbp' or null) as teachtbp,
+	         count(c.ptype='research_pap' or null) as researchpap,
+	         count(c.ptype='research_mpb' or null) as researchmpb,
+	         count(c.ptype='research_ach' or null) as researchach,
+	         count(c.ptype='research_pro' or null) as researchpro,
+	         count(c.ptype='research_fund' or null)as researchfund,
+	         count(c.ptype='other_news' or null) as othernews,
+	         count(c.ptype='other_wel' or null) as otherwel,
+	         count(c.ptype='other_exc' or null) as otherexc,
+	         count(*) 
+	         from think_user_info a,think_user_job b,think_map_status c where a.id=b.id and a.id=c.id   group by c.id  [ RunTime:0.0019s ]
+
+[ 2018-09-30T10:30:00+08:00 ] 127.0.0.1 /mksys/index.php?s=/home/admin/exceltotal/years/%E6%97%B6%E9%97%B4%E4%B8%8D%E9%99%90/dep/%E6%89%80%E6%9C%89%E7%B3%BB.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\Nginx+PHP+Mysql\nginx\html\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1666 行.
+SQL: select a.name,b.dep,
+	         count(c.ptype='teach_ach' or null) as teachach,
+	         count(c.ptype='teach_pro' or null) as teachpro,
+	         count(c.ptype='teach_tbp' or null) as teachtbp,
+	         count(c.ptype='research_pap' or null) as researchpap,
+	         count(c.ptype='research_mpb' or null) as researchmpb,
+	         count(c.ptype='research_ach' or null) as researchach,
+	         count(c.ptype='research_pro' or null) as researchpro,
+	         count(c.ptype='research_fund' or null)as researchfund,
+	         count(c.ptype='other_news' or null) as othernews,
+	         count(c.ptype='other_wel' or null) as otherwel,
+	         count(c.ptype='other_exc' or null) as otherexc,
+	         count(*) 
+	         from think_user_info a,think_user_job b,think_map_status c where a.id=b.id and a.id=c.id   group by c.id  [ RunTime:0.0018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000686s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000741s ]
+
+[ 2018-09-30T11:34:06+08:00 ] 127.0.0.1 /mksys/index.php?s=/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+
+[ 2018-09-30T11:34:28+08:00 ] 127.0.0.1 /mksys/index.php?s=/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+
+[ 2018-09-30T11:34:45+08:00 ] 127.0.0.1 /mksys/index.php?s=/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\Nginx+PHP+Mysql\nginx\html\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1675 行.
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'teach_%'  [ RunTime:0.0015s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_ach'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_tbp'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_pro'  [ RunTime:0.0001s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'research_%'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_pap'  [ RunTime:0.0001s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_mpb'  [ RunTime:0.0001s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_pro'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_ach'  [ RunTime:0.0001s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_fund'  [ RunTime:0.0001s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_%'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_exc'  [ RunTime:0.0001s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_wel'  [ RunTime:0.0001s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_news'  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091744s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091780s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2018-09-30T11:34:50+08:00 ] 127.0.0.1 /mksys/index.php?s=/home/admin/exceltotal/years/%E6%97%B6%E9%97%B4%E4%B8%8D%E9%99%90/dep/%E6%89%80%E6%9C%89%E7%B3%BB.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\Nginx+PHP+Mysql\nginx\html\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1675 行.
+SQL: select a.name,b.dep,
+	         count(c.ptype='teach_ach' or null) as teachach,
+	         count(c.ptype='teach_pro' or null) as teachpro,
+	         count(c.ptype='teach_tbp' or null) as teachtbp,
+	         count(c.ptype='research_pap' or null) as researchpap,
+	         count(c.ptype='research_mpb' or null) as researchmpb,
+	         count(c.ptype='research_ach' or null) as researchach,
+	         count(c.ptype='research_pro' or null) as researchpro,
+	         count(c.ptype='research_fund' or null)as researchfund,
+	         count(c.ptype='other_news' or null) as othernews,
+	         count(c.ptype='other_wel' or null) as otherwel,
+	         count(c.ptype='other_exc' or null) as otherexc,
+	         count(*) 
+	         from think_user_info a,think_user_job b,think_map_status c where a.id=b.id and a.id=c.id   group by c.id  [ RunTime:0.0024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2018-09-30T13:23:38+08:00 ] 127.0.0.1 /mksys/index.php?s=/home/admin/exceltotal/years/%E6%97%B6%E9%97%B4%E4%B8%8D%E9%99%90/dep/%E6%89%80%E6%9C%89%E7%B3%BB.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\Nginx+PHP+Mysql\nginx\html\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1675 行.
+
+[ 2018-09-30T13:23:38+08:00 ] 127.0.0.1 /mksys/index.php?s=/home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.150927s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.150964s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000386s ]
+
+[ 2018-09-30T13:23:47+08:00 ] 127.0.0.1 /mksys/index.php?s=/home/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+SQL:  select auth from think_login where id = '2016303117' and pd = '123456'  [ RunTime:0.0016s ]
+NOTIC: [8] Use of undefined constant auth - assumed 'auth' D:\Nginx+PHP+Mysql\nginx\html\MKSYS\MKS\Home\Controller\IndexController.class.php 第 24 行.
+SQL: select name from think_user_info where id='2016303117'  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 D:\Nginx+PHP+Mysql\nginx\html\MKSYS\MKS\Home\Controller\IndexController.class.php 第 43 行.
+
+[ 2018-09-30T13:23:47+08:00 ] 127.0.0.1 /mksys/index.php?s=/home/admin/superadmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\Nginx+PHP+Mysql\nginx\html\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1675 行.
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'teach_%'  [ RunTime:0.0010s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_ach'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_tbp'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='teach_pro'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'research_%'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_pap'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_mpb'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_pro'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_ach'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype='research_fund'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_%'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_exc'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_wel'  [ RunTime:0.0002s ]
+SQL: select count(*) from think_map_status where status='YES' and ptype like 'other_news'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066262s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000457s ]
+
+[ 2018-09-30T13:23:53+08:00 ] 127.0.0.1 /mksys/index.php?s=/home/admin/exceltotal/years/%E6%97%B6%E9%97%B4%E4%B8%8D%E9%99%90/dep/%E6%89%80%E6%9C%89%E7%B3%BB.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+NOTIC: [2048] Declaration of Home\Controller\AdminController::get() should be compatible with Think\Controller::get($name = '') D:\Nginx+PHP+Mysql\nginx\html\MKSYS\MKS\Home\Controller\AdminController.class.php 第 1675 行.
+SQL: select a.name,b.dep,
+	         count(c.ptype='teach_ach' or null) as teachach,
+	         count(c.ptype='teach_pro' or null) as teachpro,
+	         count(c.ptype='teach_tbp' or null) as teachtbp,
+	         count(c.ptype='research_pap' or null) as researchpap,
+	         count(c.ptype='research_mpb' or null) as researchmpb,
+	         count(c.ptype='research_ach' or null) as researchach,
+	         count(c.ptype='research_pro' or null) as researchpro,
+	         count(c.ptype='research_fund' or null)as researchfund,
+	         count(c.ptype='other_news' or null) as othernews,
+	         count(c.ptype='other_wel' or null) as otherwel,
+	         count(c.ptype='other_exc' or null) as otherexc,
+	         count(*) 
+	         from think_user_info a,think_user_job b,think_map_status c where a.id=b.id and a.id=c.id   group by c.id  [ RunTime:0.0029s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001181s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001289s ]
+

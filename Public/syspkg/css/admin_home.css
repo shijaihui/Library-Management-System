@@ -1,0 +1,175 @@
+.home{
+    /* background-color: rgb(131, 179, 175); */
+    opacity:0.8;
+    filter:alpha(opacity=80);
+    display: flex;
+}
+.body{
+    background-image: url(../images/admin_index_background1.jpg);
+}
+
+.body1{
+    background-image: url(../images/librarian_index_background1.jpg);
+    background-size:100% 100%; 
+    background-repeat:no-repeat; 
+}
+
+.admin_home_div{
+  
+}
+
+/* Border styles */
+#table-1 thead, #table-1 tr {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(235, 242, 224);
+}
+#table-1 {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(235, 242, 224);
+}
+
+/* Padding and font style */
+#table-1 td, #table-1 th {
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: Verdana;
+    color: black;
+}
+
+/* Alternating background colors */
+#table-1 tr:nth-child(even) {
+    background: rgb(230, 238, 214)
+}
+#table-1 tr:nth-child(odd) {
+    background: #FFF
+}
+button{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+.button {
+    width: 130px;
+    height: 40px;
+    background: linear-gradient(to bottom, #4eb5e5 0%,#389ed5 100%); /* W3C */
+    border: none;
+    border-radius: 5px;
+
+    border-bottom: 4px solid #2b8bc6;
+    color: #fbfbfb;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+    font-size: 15px;
+    text-align: left;
+    text-indent: 5px;
+    box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2);
+    cursor: pointer;
+
+    /* Just for presentation */
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.button:active {
+    box-shadow: 0px 2px 0px 0px rgba(0,0,0,.2);
+    top: 1px;
+}
+
+.button:after {
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    border-top: 20px solid #187dbc;
+    border-bottom: 20px solid #187dbc;
+    border-left: 16px solid transparent;
+    border-right: 20px solid #187dbc;
+    position: absolute;
+    opacity: 0.6;
+    right: 0;
+    top: 0;
+    border-radius: 0 5px 5px 0;
+}
+#button4{
+    position: absolute;/*此处如果用相对定位，按钮会如果定位设置出界，需要滑滚轮才可见，而不是直接突出元素*/
+    top: 20px;
+    left: 101%;
+}
+.buttons{
+    float: left;
+    display: inline-block;
+}
+.size{
+    /*position: absolute;*/
+    /*right: 120%;*/
+    margin-left: 5px;
+    width: 190px;
+    height: 30px;
+    opacity: 0;
+}
+#button1{
+    /*position: relative;!*此处如果用相对定位，按钮会如果定位设置出界，需要滑滚轮才可见，而不是直接突出元素*!*/
+    /*top: 5px;*/
+    /*right: 105%;*/
+    width: 145px;
+    height: 40px;
+    margin-top: 1px;
+}
+#button2{
+    /*position: relative;!*此处如果用相对定位，按钮会如果定位设置出界，需要滑滚轮才可见，而不是直接突出元素*!*/
+    /*top: 0px;*/
+    /*right: 105%;*/
+    width: 145px;
+    height: 40px;
+    margin-top: 5px;
+}
+#button3{
+    /*position: relative;!*此处如果用相对定位，按钮会如果定位设置出界，需要滑滚轮才可见，而不是直接突出元素*!*/
+    /*top: 0px;*/
+    /*right: 105%;*/
+    width: 145px;
+    height: 40px;
+    margin-top: 5px;
+}
+/*搜索框*/
+.searchh
+{
+    margin-top: 20px;
+    margin-left: :40px;
+    display: inline;
+    height:200px;
+}
+.searchInput
+{   
+    height:40px;
+    width: 600px;
+
+}
+.searchButton
+{
+    height: 40px;
+    width: 100px;
+    background: linear-gradient(to bottom, #4eb5e5 0%,#389ed5 100%); /* W3C */
+    border: none;
+    border-radius: 5px;
+
+    border-bottom: 4px solid #2b8bc6;
+    color: #fbfbfb;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+    font-size: 15px;
+    text-align: left;
+    text-indent: 5px;
+    box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2);
+    cursor: pointer;
+}
+.btnn
+{
+    background: black;
+    border: none;
+    font-size: 18px;
+}
